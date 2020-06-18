@@ -1,0 +1,118 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css">
+{ZL:HTML5()/} 
+<script language="javascript" src="{$CssDir/}js/jquery.js"></script>
+<script language="javascript" src="{$CssDir/}js/jarrowjs.js"></script>
+<style>
+nav li a { color:#5E3080;}
+#search { width:290px; float:right; margin-right:65px; line-height:20px; }
+.s2 { margin-right:5px;}
+#search a { margin-left:2px; }
+#search a img { padding-top:2px;}
+table{ margin-top:10px;}	
+.topic .Node{SField sid="节点栏目信息数据源" FD="Nodeid" page="0"/} a{ color:#F00;}
+ nav .menus{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{ color:#F00; background:url({$CssDir/}images/nava_bg.gif) bottom no-repeat; height:42px; line-height:42px; display:block;}
+#CatNav .Node0{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{ color:#F00;}
+.CatNav #node{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{ display:block; color:#F00;}
+nav .menus{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{ color:#F00; background:url({$CssDir/}images/nava_bg.gif) bottom no-repeat; height:42px; line-height:42px; display:block;}
+</style>
+<script>
+function Show_Ser_Nodes(id){
+  if($("#node"+id).css("display")=='none'){
+ 	$("#node"+id).show(600);
+	 }
+	 else {
+		 $("#node"+id).hide(600);
+ 	}
+}
+</script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+
+{ZL.Label id="加入我们广告位图片轮换效果"/}      
+
+<div id="content">
+<div class="content_l">
+<div class="content_news">
+<h2>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h2>
+<ul class="us_bg">
+   <li onclick="Show_Ser_Nodes('0')"> <a href="javascript:">人才培训</a> 
+   </li>
+    <div id="node0" class="nodelist">
+  <ul>
+{ZL.Label id="节点列表页面" ParentID="6" ShowNum="10" /}
+  </ul>
+  </div>
+  <li onclick="Show_Ser_Nodes('1')"> <a href="javascript:">人才招聘</a>  </li>
+  <div id="node1" class="nodelist hidden">
+  <ul>
+{ZL.Label id="节点列表页面" ParentID="7" ShowNum="10" /}
+  </ul>
+  </div>
+ 
+ 
+   </ul>
+</div>
+<div class="news_search">
+<h3>新闻搜索</h3>
+<iframe src="/search/indexsearch1.aspx" width="160" height="22" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+<div class="clear"></div>
+</div>
+<div class="news_title"><a href="{ZL:GetNodeLinkUrl(25)/}"><img src="{$CssDir/}images/nk.jpg" alt="尽在《中南人》" /></a></div>
+<div class="clear"></div>
+</div><!--content_l end-->
+ 
+
+<div class="content_r">
+<div class="content_r_site"><span><a href="/">首页</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/} </span>
+<strong>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</strong></div>
+<!--mysite end -->
+ <div class="brand_li">
+<div style="float:right; width:1px; height:515px;"></div>
+{ZL.Label id="输出指定节点标题列表_带时间属性_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}"  TitleNum="80" ShowNum="20" /} 
+<div class="clear"></div>
+</div><!--news_list end --><!-- -->
+</div><!--main end --></div>
+{ZL.Label id="全站底部"/}
+<SCRIPT>
+var currentindex=1;
+$("#flashBg").css("background-color",$("#flash1").attr("name"));
+function changeflash(i) {	
+currentindex=i;
+for (j=1;j<=4;j++){
+if (j==i) 
+{
+$("#flash"+j).fadeIn("normal");
+$("#flash"+j).css("display","block");
+$("#f"+j).removeClass();
+$("#f"+j).addClass("dq");
+$("#bannerbg").css("background-color",$("#flash"+j).attr("name"));
+}
+else
+{$("#flash"+j).css("display","none");
+$("#f"+j).removeClass();
+$("#f"+j).addClass("no");}
+}}
+function startAm(){
+timerID = setInterval("timer_tick()",3000);
+}
+function stopAm(){
+clearInterval(timerID);
+}
+function timer_tick() {
+currentindex=currentindex>=4?1:currentindex+1;
+changeflash(currentindex);}
+$(document).ready(function(){
+$(".flash_bar div").mouseover(function(){stopAm();}).mouseout(function(){startAm();});
+startAm();
+}); 
+</SCRIPT>
+
+</body>
+</html>

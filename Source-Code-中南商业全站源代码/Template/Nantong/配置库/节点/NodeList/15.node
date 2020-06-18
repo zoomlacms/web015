@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>15</NodeID>
+    <NodeName>商业广场</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>sygc</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips />
+    <ParentID>2</ParentID>
+    <OrderID>15</OrderID>
+    <Child>0</Child>
+    <Depth>2</Depth>
+    <NodePicUrl>/Template/Nantong/style/images/S_03.jpg</NodePicUrl>
+    <Description>我曾经说过，创新分为技术创新、管理创新、商业模式创新等等，其中最高层面是商业模式创新。传统行业进行流程再造和商业模式创新，同样可以创造伟大的公司。比如麦当劳，卖汉堡包谁都会做，但麦当劳依靠全球统一的标准流程，每年销售额几百亿美元。不动产也属于传统行业，一百年前购物中心就已出现。中南能发展这么快、做得这么好靠的也是商业模式创新。国外做不动产主要依靠REITS来解决资金问题，但中国没有这种金融产品，如果完全采用买地建商业中心，然后持有出租的方式，现金需求量大，回报低，企业很难快速发展。中南的做法是在购物中心旁开发写字楼和住宅，靠销售这部分物业来平衡现金流。这些年，随着中南品牌越来越强大，请中南去做项目的城市越来越多，为了吸引中南，这些城市要么给予我们较低的地价</Description>
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <IndexTemplate>栏目列表/产品中心.html</IndexTemplate>
+    <ListTemplateFile />
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel>8</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>3</ListPageHtmlEx>
+    <ContentFileEx>3</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>1</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <SafeGuard>0</SafeGuard>
+    <ItemOpenTypeTrue>_self</ItemOpenTypeTrue>
+    <OpenTypeTrue>_self</OpenTypeTrue>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>1</ClickTimeout>
+    <Purview>&lt;View&gt;allUser&lt;/View&gt;&lt;ViewGroup&gt;&lt;/ViewGroup&gt;&lt;ViewSunGroup&gt;&lt;/ViewSunGroup&gt;&lt;input&gt;&lt;/input&gt;&lt;forum&gt;1,2&lt;/forum&gt;</Purview>
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>3</ListPageEx>
+    <LastinfoPageEx>3</LastinfoPageEx>
+    <HotinfoPageEx>3</HotinfoPageEx>
+    <ProposePageEx>3</ProposePageEx>
+    <Viewinglimit>1=0|2=0</Viewinglimit>
+  </Table>
+</NewDataSet>

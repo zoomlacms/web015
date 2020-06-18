@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>682</LabelID>
+    <LabelName>输出指定节点栏目图片</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,1,1,父ID|ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Node</LabelTable>
+    <LabelField>Description,NodeID,NodeName,NodePicUrl</LabelField>
+    <LabelWhere>ParentID=@ParentID</LabelWhere>
+    <LabelOrder>OrderID DESC</LabelOrder>
+    <LabelContent>{Repeate}&lt;a style="display:block;" id="flash{ZL:jsq}"&gt;
+&lt;img src="{Field="NodePicUrl"/}" alt="{Field="NodeName"/}" /&gt;
+&lt;/a&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>一直累加</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>1</Modelvalue>
+    <Valueroot />
+    <IsOpen>1</IsOpen>
+    <FalseContent>{Repeate}&lt;a style="display:none;" id="flash{ZL:jsq}"&gt;
+&lt;img src="{Field="NodePicUrl"/}" alt="{Field="NodeName"/}" /&gt;
+&lt;/a&gt;{/Repeate}
+</FalseContent>
+    <DataSourceType>Nantong</DataSourceType>
+    <ConnectString />
+  </Table>
+</NewDataSet>

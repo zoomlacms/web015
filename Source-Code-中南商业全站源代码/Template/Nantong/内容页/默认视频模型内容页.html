@@ -1,0 +1,59 @@
+﻿{ZL.Source id="视频数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="视频数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="视频数据源标签" FD="Tagkey" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+{ZL:HTML5()/}
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<script type="text/javascript" src="{$CssDir/}js/flv.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<!--内容主体开始 -->
+<div id="main"> 
+<div id="main_li">
+<div class="mainR_li">
+<div class="mainR_t"><span><a href="{ZL:GetNodeUrl(1)/}">更多>></a></span><b>热门推荐</b></div>
+<ul id="mainR_ph">
+{ZL.Label id="输出指定节点标题_按点击" NodeID="3" TitleNum="35" ShowNum="8" /}
+</ul>
+</div><!--循环块之一结束 --> 
+<!--循环块之一结束 -->
+<div class="mainR_li" >
+<div class="mainR_t"><span><a href="{ZL:GetNodeUrl(4)/}">更多>></a></span><b>品牌推荐</b></div>
+<ul id="mainR_ph">
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="4" TitleNum="35" ShowNum="8" /} 
+</ul>
+</div>
+
+</div> <!--左 -->
+<div id="main_ri">
+<div class="blubg mt10">
+<h1>{SField sid="视频数据源标签" FD="Title" page="0"/}</h1>
+<p class="center"><abbr><span id="author">作者：{SField sid="视频数据源标签" FD="author" page="0"/}</span> <span id="source">来源：{SField sid="视频数据源标签" FD="source" page="0"/}</span> <span id="CreateTime">发布时间：{ZL:FormatDate({SField sid="视频数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/}</span> <span id="Hits">点击数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="视频数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span></abbr>
+</p>
+<div id="content">
+<div id="content_li" style="margin-top:10px;">
+<embed src="{SField sid="视频数据源标签" FD="url" page="0"/}" allowFullScreen="true" quality="high" width="740" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<div style="clear:both"></div>
+<strong>视频说明：</strong>
+{SField sid="视频数据源标签" FD="content" page="0"/}
+</div>
+<div id="begin"><span id="asc">上一篇文章：{ZL.Label id="上一篇文章"/}</span><br/><span id="desc">下一篇文章：{ZL.Label id="下一篇文章"/}</span></div>
+</div><!--content_li end -->
+</div>
+</div><!--右 -->
+<div style="clear:both;"></div>
+</div>
+<!--主体结束 -->
+{ZL.Label id="全站底部"/}
+<div class="clear"></div>
+</body>
+</html>

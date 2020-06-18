@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="MIS_Mail_SetPage, App_Web__p-1wbe-" enableEventValidation="false" viewStateEncryptionMode="Never" %> 

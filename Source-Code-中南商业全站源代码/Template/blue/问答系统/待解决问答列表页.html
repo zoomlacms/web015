@@ -1,0 +1,69 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$SiteName/}问答系统</title>
+<link href="{$CssDir/}fques.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script> 
+</head>
+<body id="header" >
+<div id="home_all"> 
+{ZL.Label id="蓝色头部"/}
+{ZL.Label id="问答导航"/}
+<div id="g_gei">
+<div class="topsech">
+{ZL.Label id="头部搜索表单"/}</div>
+<div id="g_gei_top" ><a href="/columnlist.aspx?nodeid=113">问答系统</a>>>{ZL.Label id="获取问题分类名" parentid="{$GetRequest(bigclass)$}" /}</div>
+<div id="g_gei_l">
+{ZL.Label id="问题分类1" parentid="{$GetRequest(bigclass)$}" /}
+<div id="asklistleft">
+
+<!--box-->
+<div id="showques">
+<div id="showtitle" style="background:url({$CssDir/}Images/ques.gif) no-repeat 0 -70px;">
+<ul>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=115&bigclass={$GetRequest(bigclass)$}">全部问题</a></li>
+<li class="cbgopen"><a href="/columnlist.aspx?nodeid=116&bigclass={$GetRequest(bigclass)$}">已解决问题</a></li>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=117&bigclass={$GetRequest(bigclass)$}">待解决问题</a></li>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=118&bigclass={$GetRequest(bigclass)$}">零回答问题</a></li>
+</ul>
+
+</div>
+<div id="showcon">
+<dl>
+<dt><b style="margin-left:20px;">标题</b></dt>
+<dd><span>阅读</span>
+<span>回答</span>
+<span>状态</span>
+<p>回答时间</p>
+</dd>
+<div style="clear:both"></div>
+</dl>
+{ZL.Label id="大类全部问题列表未解决" num="25" /}
+
+</div>
+</div><!--box-->
+</div><!--left-->
+</div>
+<div id="g_gei_r">
+<div id="g_gei_r_t">
+<img src="{$CssDir/}images/g_lb.gif" width="14" height="15" /> <span>等待您来回答</span></div>
+<div id="g_gei_r_m">
+<ul>
+{ZL.Label id="等待您来回答" num="20" length="32" /}
+<div class="gcl"></div></ul>
+</div>
+<div id="g_gei_r_b"></div>
+
+
+</div>
+<div class="gcl"></div>
+</div>
+
+{ZL.Label id="蓝色底部"/}
+<div class="clear"></div>
+</div>
+<SCRIPT src="/js/openType.js" type=text/javascript></SCRIPT> 
+</body>
+</html>

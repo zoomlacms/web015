@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>679</LabelID>
+    <LabelName>产品中心广告位图片轮换效果</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="bannerbox"&gt;
+&lt;div id="bannerbg"&gt;
+&lt;div id="flash"&gt;
+&lt;a style="display:block;" id="flash1" href="{ZL:GetNodeLinkUrl(12)/}"&gt;&lt;img src="{$CssDir/}images/product.jpg" title="购物中心" alt="购物中心" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash2" href="{ZL:GetNodeLinkUrl(13)/}"&gt;&lt;img src="{$CssDir/}images/hotel.jpg" title="酒店"  alt="酒店" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash3" href="{ZL:GetNodeLinkUrl(14)/}"&gt;&lt;img src="{$CssDir/}images/street.jpg" title="商业街"  alt="商业街" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash4" href="{ZL:GetNodeLinkUrl(15)/}"&gt;&lt;img src="{$CssDir/}images/department.jpg" title="百货"  alt="百货" /&gt;&lt;/a&gt;
+        
+&lt;DIV class="flash_bar"&gt;
+&lt;DIV id="f1" class="dq" onclick="changeflash('1')"&gt;4&lt;/DIV&gt;
+&lt;DIV id="f2" class="no" onclick="changeflash('2')"&gt;3&lt;/DIV&gt;
+&lt;DIV id="f3" class="no" onclick="changeflash('3')"&gt;2&lt;/DIV&gt;
+&lt;DIV id="f4" class="no" onclick="changeflash('4')"&gt;1&lt;/DIV&gt;
+&lt;/DIV&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

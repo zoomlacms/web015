@@ -1,0 +1,199 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+{ZL:HTML5()/} 
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="{$CssDir/}js/slid.js"></script>
+<style type="text/css">
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body id="header" >
+<div id="home_all"> 
+{ZL.Label id="蓝色头部"/} 
+
+<div id="topbanner"><img src="{$CssDir/}Images/bannertop2.jpg" /></div><!-- 通栏广告位 -->
+
+<div id="mysite">
+    <p>您的位置：<a href="/">{$SiteName/}</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}>>频道首页</p><span class="sysp"> <iframe src="../../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="320" height="28"></iframe></span>
+    <!--这里还可以放一个通栏广告位 -->
+</div>
+<div id="elitc">
+<div id="elitL_ban">
+<div class="FocusImg">
+			<div class="BigPic" id="BigPic_01"><a href="#" target="_blank"><img src="" style="FILTER: revealTrans(duration=1,transition=23);" galleryimg="no" alt="" /></a></div>
+			<div class="TitleBg"></div>
+			<div class="TitleBox" id="TitleBox_01"></div>
+			<div class="MemoBox" id="MemoBox_01"></div>
+			<div class="SmallPics" id="SmallPics_01"><!-- 小图列表 --></div>
+		</div>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+var FocusPic_02 = new FocusPic("BigPic_01","SmallPics_01","TitleBox_01","MemoBox_01");
+
+{ZL.Label id="首页循环广告代码" NodeID="79" TitleNum="25" ShowNum="4" /}
+ 
+FocusPic_02.listCode = '<span onmouseover="FocusPic.childs[[$thisId]].select([$num])"><img src="[$pic]" alt="[$title]" /><b></b></span>';
+FocusPic_02.begin();
+//--><!]]>
+</script>
+</div>
+<div class="elt_phtr">
+<div class="mainR_t"><span><a href="{ZL:GetNodeUrl(78)/}">更多>></a></span><b>排行 </b></div>
+<ul id="mainR_ph">
+{ZL.Label id="输出指定节点标题_按点击" NodeID="1" TitleNum="30" ShowNum="10" /}
+</ul>
+</div> 
+</div> 
+
+<!--内容主体开始 -->
+<div id="main">  
+{ZL.Label id="图库节点下列表块循环" ParentID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="5" TitleNum="30" Nums="10" /}  
+</div> 
+<!--内容主体结束 --> 
+
+<div style="clear:both;"></div>
+{ZL.Label id="蓝色底部"/}<div class="clear"></div>
+</div>
+<SCRIPT src="/js/openType.js" type=text/javascript></SCRIPT> 
+<script type="text/javascript"> 
+<!--
+function dayoo_showpic(options){
+    var options = {
+        move_id      : dojo.byId(options.move_id),
+        move_tab     : options.move_tab || "li",
+        bn1          : dojo.byId(options.bn1),
+        bn2          : dojo.byId(options.bn2),
+        class_able   : options.class_able || "",
+        class_disable: options.class_disable || "",
+        total_dis    : options.total_dis,
+        move_num     : options.move_num || 1,
+        time         : options.play_time
+    }
+ 
+    if(!options.move_id || !options.bn1 || !options.bn2) return false;
+    var tab = options.move_id.getElementsByTagName(options.move_tab);
+    if(!tab[0]) return false;
+ 
+    options.bn1.status = false;
+    options.bn2.status = false;
+    var can_move = true;
+    var move_dis = options.move_num * tab[0].clientWidth;
+ 
+    var len = tab.length;
+    var total_x = tab[0].clientWidth * len;
+    if(total_x <= options.total_dis){
+        options.bn1.className = options.class_disable;
+        options.bn2.className = options.class_disable;
+        can_move = false;
+        return false;
+    }else{
+        options.bn2.className = options.class_able;
+        options.move_id.style.width = tab[0].clientWidth * len + "px";
+        options.bn2.status = true;
+        var parent = options.move_id.parentNode;
+        dojo.style(parent, 'position', 'relative');
+        dojo.style(options.move_id, 'position', 'absolute');
+    };
+ 
+    dojo.connect(options.bn1, 'click', function(e){
+        if(!can_move) return false;
+        var left = dojo.style(options.move_id, 'left');
+        if(options.bn1.status){
+            can_move = false;
+            dojo.animateProperty({
+                node: options.move_id,
+                properties:{
+                    left: {start: left, end: left + move_dis, unit: "px"}
+                },
+                duration: options.time
+            }).play();
+            window.setTimeout(function(){
+                can_move = true;
+                options.bn2.status = true;
+                options.bn2.className = options.class_able;
+            }, options.time);
+        }else{
+            return false;
+            dojo.stopEvent(e);
+        }
+ 
+        if(left + move_dis >= 0){
+            options.bn1.status = false;
+            options.bn1.className = options.class_disable;
+        }
+        return false;
+        dojo.stopEvent(e);
+    });
+ 
+    dojo.connect(options.bn2, 'click', function(e){
+        if(!can_move) return false;
+        var left = dojo.style(options.move_id, 'left');
+        if(options.bn2.status){
+            can_move = false;
+            dojo.animateProperty({
+                node: options.move_id,
+                properties:{
+                    left: {start: left, end: left - move_dis, unit: "px"}
+                },
+                duration: options.time
+            }).play();
+            window.setTimeout(function(){
+                can_move = true;
+                options.bn1.status = true;
+                options.bn1.className = options.class_able;
+            }, options.time);
+ 
+        }else{
+            return false;
+            dojo.stopEvent(e);
+        }
+ 
+        if(left - move_dis <= options.total_dis - total_x){
+            options.bn2.status = false;
+            options.bn2.className = options.class_disable;
+        }
+        return false;
+        dojo.stopEvent(e);
+ 
+    });
+ 
+}
+ 
+ 
+ for(i=1;i<=5;i++){
+dayoo_showpic({
+    //移动的总元素id
+    move_id      : "showpic"+i+"_move",
+    //需要获取的元素
+    move_tab     : "li",
+    //按钮一
+    bn1          : "bn"+i+"_1",
+    //按钮二
+    bn2          : "bn"+i+"_2",
+    //按钮类名(可移动)
+    class_able   : "canmove",
+    //按钮类名(不可移动)
+    class_disable: "",
+    //总窗口的长度
+    total_dis: 600,
+    //移动个数
+    move_num : 3,
+    //动画时间
+    play_time: 1000
+});
+ }
+ 
+ 
+ </script>
+</body>
+</html>

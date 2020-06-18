@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Hotinfo, App_Web_l4lmq_yq" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

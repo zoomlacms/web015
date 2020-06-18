@@ -1,0 +1,89 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="manage_Site_SiteMaster, App_Web_rhqdlbvz" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="../../App_Themes/AdminDefaultTheme/Guide.css" />
+<link type="text/css" rel="stylesheet" href="../../App_Themes/AdminDefaultTheme/index.css" />
+<link type="text/css" rel="stylesheet" href="../../App_Themes/AdminDefaultTheme/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="site_top">
+            <div id="site_top_l">
+                <div id="site_logo">
+                    <a href="Default.aspx">
+                        <img src="<%Call.Label("{$LogoUrl/}"); %>" alt="<%Call.Label("{$SiteName/}"); %>" /></a>
+                </div>
+                <div id="site_top_lr">
+                    <strong><a href="Default.aspx">站群管理中心</a> </strong><a href="Default.aspx">首页</a>|<a href="../Default.aspx">经典后台</a> |
+                    <a href="javascript:modalDialog('/Common/calc.html', 'calculator', 400, 300)">计算器</a>
+                </div>
+            </div>
+            <div id="site_top_r">
+                <div id="site_top_t">
+                    当前授权版权：开放版|被授权用户：<span id="site_user" runat="server"></span><a href="../SignOut.aspx">[安全退出]</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div>
+            <div id="site_naver">
+<div id="site_nav">
+<%if(badmin.CheckLogin()) {%><!--如果是管理员登录-->
+<ul>
+<li class="site08"><a href="SiteConfig.aspx">全局配置</a></li>
+<li class="site01"><a href="Default.aspx">站点列表</a></li>
+<li class="site02"><a href="SitePool.aspx">应用程序池</a></li>
+<li class="site03"><a href="CloudLead.aspx">模板云台</a></li>
+<li class="site04"><a href="SiteCloudSetup.aspx">快云安装</a></li>
+<li class="site07"><a href="SiteDataCenter.aspx">数据中心</a></li>
+<li class="site06"><a href="#">服务列表</a></li>
+</ul>
+    <%}else if(!buser.GetLogin().IsNull) { %><!--如果非管理员,但为用户登录-->
+<ul>
+<li  class="site06"><a href="#">服务列表</a></li>
+</ul>
+    <%} %>
+
+</div>
+</div>
+<asp:ContentPlaceHolder ID="pageContent" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+</form>
+
+<div id="site_bottom">
+<div id="site_bot">
+    <div id="site_bot_l">
+	<ul>
+	    <li><a href="http://www.zoomla.cn/help" target="_blank">新手指南</a></li>
+	    <li><a href="http://www.zoomla.cn/mtv" target="_blank">学习资源</a></li>
+	    <li><a href="http://ad.zoomla.cn" target="_blank">广告代码</a></li>
+	    <li><a href="http://help.zoomla.cn/data/">数据字典</a></li>
+	    <li><a href="http://www.zoomla.cn/templet/" target="_blank">模板中心</a></li>
+	    <li><a href="http://help.zoomla.cn/" target="_blank">帮助文档</a></li>
+	    <li><a href="http://bbs.zoomla.cn" target="_blank">开发社区</a></li>
+	    <li>Copyright &copy;
+		<script type="text/javascript"> 
+<!--
+var year = "";
+mydate = new Date();
+myyear = mydate.getYear();
+year = (myyear > 200) ? myyear : 1900 + myyear;
+document.write(year); 
+--> 
+		</script>
+		<%Call.Label("{$SiteName/}"); %> All Rights Reserved
+	    </li>
+	</ul>
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

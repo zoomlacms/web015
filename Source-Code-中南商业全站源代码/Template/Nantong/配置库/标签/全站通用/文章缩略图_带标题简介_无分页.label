@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>673</LabelID>
+    <LabelName>文章缩略图_带标题简介_无分页</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,0,1,节点ID|TitleNum,30,1,标题长度|ShowNum,10,1,调用信息数|synNum,100,1,简介数|content,60,1,内容数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_Article on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_CommonModel.TitleStyle,ZL_C_Article.pic,synopsis,ZL_C_Article.pic,content</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99 And pic&lt;&gt;''</LabelWhere>
+    <LabelOrder>CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+
+&lt;div class="syn_li"&gt;
+&lt;div class="Product"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}" /&gt;&lt;/a&gt;&lt;p&gt;{ZL:CutText({Field="synopsis"/},@synNum,..)/} &lt;span&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;详情介绍&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!--Product end --&gt;
+
+&lt;/div&gt;&lt;!--syn_li end --&gt;
+{/Repeate}
+
+
+
+</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Nantong</DataSourceType>
+    <ConnectString />
+  </Table>
+</NewDataSet>

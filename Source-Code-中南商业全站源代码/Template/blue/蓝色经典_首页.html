@@ -1,0 +1,571 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{$SiteTitle/}_网站首页</title>
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" /> 
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:HTML5()/}
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/js/jquery.lazyload.js" type="text/javascript"></script>
+<script src="{$CssDir/}js/slid.js"></script>
+<script src="{$CssDir/}js/changeskin.js" language="javascript"  type="text/javascript"></script>
+<script type="text/javascript" src="{$CssDir/}js/head.js"></script>
+<script type="text/javascript" src="{$CssDir/}js/server.js"></SCRIPT>
+ <link href="{$CssDir/}skin_0.css" rel="stylesheet" type="text/css" id="skinCss" />
+<style type="text/css">
+#nav li#Menu0 a:hover{ text-decoration:underline;}
+#nav li#Menu0 a{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+ </style>
+ </head> 
+<body class="h_body" id="header" onLoad="uids()" >
+<div id="bodys"></div>
+<div  id="sub_navs">
+<div id="guide1" class="guide1"></div>
+<div id="guide2" class="guide2"></div>
+<div id="guide3" class="guide3"></div>
+<div id="guide4" class="guide4"></div>
+<div id="divText"><input type="button" value="上一步" id="prev"/> <input type="button" value="下一步" id="next"/>  <input type="button" value="关闭" id="close"/>
+<p></p></div>
+</div>
+ 
+ <div id="home_all"> 
+ <div id="morelist" style="border:1px solid #3366CC;list-style:none;width:950px; height:150px;display:none;margin:auto;">
+<div class="rollBox">
+<a onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"  class="img1 LeftBotton" /></a>
+     <div class="Cont" id="ISL_Cont">
+      <div class="ScrCont">
+       <div id="List1">
+<A class="pl selected"  id="skin_0" onClick="golbal('0')" title="默认模板"><IMG height=72 src="{$CssDir/}images/skin_icon0.jpg" width=96> </A>
+<A class="pl" id="skin_1" onClick="golbal('1')" title="放飞爱情"><IMG height=72 src="{$CssDir/}images/skin_icon1.jpg" width=96></A>
+<A class="pl" id="skin_2" onClick="golbal('2')" title="加菲猫"><IMG height=72 src="{$CssDir/}images/skin_icon2.jpg" width=96></A>
+<A class="pl" id="skin_3" onClick="golbal('3')" title="小象国"><IMG height=72 src="{$CssDir/}images/skin_icon3.jpg" width=96></A>
+<A class="pl" id="skin_4" onClick="golbal('4')" title="花好月圆"><IMG height=72 src="{$CssDir/}images/skin_icon4.jpg" width=96></A>
+<A class="pl" id="skin_5" onClick="golbal('5')" title="葡萄"><IMG height=72 src="{$CssDir/}images/skin_icon5.jpg" width=96></A>
+<A class="pl" id="skin_6" onClick="golbal('6')" title="欢度国庆"><IMG height=72 src="{$CssDir/}images/skin_icon6.jpg" width=96></A>
+<A class="pl" id="skin_7" onClick="golbal('7')" title="忧伤"><IMG height=72 src="{$CssDir/}images/skin_icon7.jpg" width=96></A>
+<A class="pl" id="skin_8" onClick="golbal('8')" title="水墨山水"><IMG height=72 src="{$CssDir/}images/skin_icon8.jpg" width=96></A>
+	<!-- 图片列表 end -->
+   </div>
+  </div>
+ </div>
+<a onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"  class="img2 RightBotton"  /></a>
+</div>
+
+ <div id="formb">
+  <table><tr><td><div id="skins"></div> 
+<input type="button" id="definite" value="" class="definite" onClick="setCookie('Skinname','2','232');toggle('morelist','iskin')"></td><td>
+<input type="button"   value="" class="skinreset" onClick="delCookie()"></td></tr></table>
+</div>
+</div>
+<script type="text/javascript">
+function golbal(num)
+{document.getElementById("skins").innerHTML='<input type=button  class=definite onClick=setCookie("Skinname","'+num+'","232");toggle("morelist","iskin")>';
+document.getElementById("definite").style.display="none";
+}
+ </script>
+<div id="top">
+<div id="WebTop">
+<div id="logo"><a href="/" target="_blank"><img src="{$LogoUrl/}" alt="{$SiteName/}" /></a></div>
+<div id="Top_R">
+<div id="TopNavBar">
+<ul class="TopN_l">
+<li class="skin"><a href="javascript:toggle('morelist','iskin')"  ref="noBlank" id="iskin">换肤</a></li>
+<li class="set_home"><a  onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$SiteURL/}');" href="#">设为首页</a></li>
+<li class="havior"><a href="javascript:window.external.addFavorite('{$SiteURL/}','{$SiteName/}');">加入收藏</a></li>
+<li class="non">|</li>
+<li class="non"><a href="/user/">登录</a></li>
+<li class="non"><a href="/user/Register.aspx">注册</a></li> 
+</ul> 
+<ul class="TopN_r">
+<li> {ZL:Big5()/}</li> 
+<li><span id="btnNoBlank" class="curr">原窗口打开</span></li>
+<li><span id="btnNewBlank">新窗口打开</span></li>
+<li><span id="setOk" style="display:none;">设置成功!</span></li>
+<li id="aaa"><a onClick="navst();uids()">功能介绍</a></li> </ul>
+</div>
+<div id="nav">
+<ul>
+<li id="Menu0"><a href="/" target="_blank">首页</a></li>
+{ZL.Label id="蓝色经典_顶部节点列表" ParentID="0" ShowNum="8" /}
+</ul>
+</div><!--导航结束-->
+</div>
+</div>
+
+<div id="down_zoomla"><a href="http://www.zoomla.cn/pub/" target="_blank" title="马上下载集成智能云模板的Zoomla!逐浪CMS">点此下载<br/>开箱即用</a></div>
+</div>
+<div id="mysite">
+    <span class="sysspan">
+	<a href="/user/" target="_blank">社区导航：</a>
+	<a href="/User/UserZone/Parking/Default.aspx">抢车位</a>
+	<a href="/User/UserZone/Book/BookList.aspx">读书</a>
+	<a href="/User/UserZone/LogManage/SelfLogManage.aspx">日记</a>
+	<a href="/User/UserZone/Memo/MemoList.aspx">备忘</a>
+	<a href="/User/UserZone/Pic/CategList.aspx">相册</a>
+	<a href="/User/UserFriend/">好友</a>
+	<a href="/User/UserZone/Book/MusicList.aspx">音乐</a>
+	<a href="/User/UserZone/Book/MovieList.aspx">电影</a>
+	<a href="/User/UserZone/Home/MyHome.aspx">小屋</a>
+	<a href="/User/userzone/GatherStrainManage/GSManage.aspx">族群</a>
+	<a href="/User/UserZone/Message/MyMessage.aspx">留言板</a>
+	<a href="/User/UserZone/ChitChat.aspx">蒙面聊</a>
+	<a href="/User/UserZone/Book/ItineraryList.aspx">旅途</a>
+	<a href="/User/UserZone/School/MySchoolList.aspx">班级</a>
+	<a href="/Guest/Ask/">问答</a>
+	<a href="/Guest/Baike/">百科</a>
+	<a href="/User/UserZone/School/AddRessList.aspx">通讯录</a>
+    </span>
+<span class="sysp">   
+ <iframe src="../../Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0" width="320" height="28"></iframe>
+</span>
+    <div class="clear"></div>
+</div> 
+<a name="a1"></a>
+
+ <div id="elit">
+<div id="elitL_ban">
+<div class="FocusImg">
+			<div class="BigPic" id="BigPic_01"><a href="#" target="_blank"><img src="" style="FILTER: revealTrans(duration=1,transition=23);" galleryimg="no" alt="" /></a></div>
+			<div class="TitleBg"></div>
+			<div class="TitleBox" id="TitleBox_01"></div>
+			<div class="MemoBox" id="MemoBox_01"></div>
+			<div class="SmallPics" id="SmallPics_01"><!-- 小图列表 --></div>
+		</div>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+var FocusPic_02 = new FocusPic("BigPic_01","SmallPics_01","TitleBox_01","MemoBox_01");
+
+{ZL.Label id="首页循环广告代码" NodeID="79" TitleNum="25" ShowNum="4" /}
+ 
+FocusPic_02.listCode = '<span onmouseover="FocusPic.childs[[$thisId]].select([$num])"><img src="[$pic]" alt="[$title]" /><b></b></span>';
+FocusPic_02.begin();
+//--><!]]>
+</script>
+</div>
+<div id="edit_r">
+<div id="elitR_ban"><a href="#"><img src="{$CssDir/}Images/ad1.jpg" alt="广告位"></a></div>
+<div id="homegrids" class="elitR_gg hslice">
+<div class="elit_t"><span><a href="{ZL:GetNodeLinkUrl(76)/}" target="_blank">更多</a></span><b>动态公告</b></div>
+<h2 class="entry-title" style="display:none">{$SiteName/}快讯</h2>
+<ul class="entry-content">
+{ZL.Label id="输出指定节点标题_带时间属性MMdd" NodeID="76" TitleNum="28" ShowNum="7" /}
+</ul>
+</div>
+</div>
+</div><!--推荐区结束-->
+ 
+ <div id="topic">
+<h1>{ZL.Label id="头条新闻" NodeID="100" TitleNum="40" ShowNum="1" /}</h1>
+<ul> {ZL.Label id="输出指定节点非推荐信息_无时间属性" NodeID="100" TitleNum="25" ShowNum="4" /} 
+</ul>
+</div><!--本站头条结束-->
+ 
+<div id="main">
+<div id="main_l">
+<div class="main_cl fl">
+<div class="main_t">
+<span class="more"><a href="{ZL:GetNodeLinkUrl(1)/}" title="更多资讯中心">更多</a></span><b>资讯中心</b>
+</div>
+<div class="mainL_li"> 
+{ZL.Label id="文章缩略图_带标题简介" NodeID="1" TitleNum="30" ShowNum="1" synNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="1" TitleNum="40" ShowNum="5" /}
+</ul>
+</div>
+</div>
+<div class="main_cl fr">
+<div class="main_t">
+<span class="more"><a href="{ZL:GetNodeLinkUrl(85)/}" title="更多图库中心">更多</a></span><b>图库中心</b>
+</div>
+<div class="mainL_li"> 
+{ZL.Label id="图库缩略图_带标题简介" NodeID="85" TitleNum="30" ShowNum="1" synNum="100" /}
+<ul> 
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="85" TitleNum="40" ShowNum="5" /}
+</ul>
+</div> 
+</div>
+<div class="main_cl fl">
+<div class="main_t">
+<span class="more"><a href="{ZL:GetNodeLinkUrl(84)/}" title="更多资源下载">更多</a></span><b>资源下载</b>
+</div>
+<div class="mainL_li">   
+{ZL.Label id="下载缩略图_带标题简介" NodeID="84" TitleNum="30" ShowNum="1" synNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="84" TitleNum="40" ShowNum="5" /}
+</ul>
+</div> 
+</div>
+<div class="main_cl fr">
+<div class="main_t">
+<span class="more"><a href="{ZL:GetNodeLinkUrl(99)/}" title="更多分类信息">更多</a></span><b>分类信息</b>
+</div>
+<div class="mainL_li"> 
+{ZL.Label id="分类信息缩略图_带标题简介" NodeID="99" TitleNum="30" ShowNum="1" synNum="100" /}
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="99" TitleNum="40" ShowNum="5" /}
+</ul>
+</div>
+</div>
+</div>
+<div id="main_r">
+<div class="mainR_li">
+<div class="mainR_t"><b>在线调查</b></div>
+{Pub.ZXDC/}
+</div>
+
+<div class="mainR_li">
+<div class="mainR_t"><span><strong><a href="#">热点</a></strong> | <a href="#"> 评论 </a>|<a href="#"> 关注 </a></span><b>排行</b></div>
+<ul id="mainR_ph"> 
+{ZL.Label id="输出指定节点标题_按点击" NodeID="1" TitleNum="30" ShowNum="8" /}
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div><!--主体区结束-->
+ 
+<div id="bot_main">
+<div id="bot_pho">
+<div id="pho_t"><b><a href="{ZL:GetNodeLinkUrl(110)/}" title="">精品贴图</a></b><span class="more"><a href="{ZL:GetNodeLinkUrl(110)/}" target="_blank">更多</a></span></div>
+<div>
+<ul>
+{ZL.Label id="图库缩略图_推荐" NodeID="85" TitleNum="25" ShowNum="1" /}
+{ZL.Label id="图库缩略图列表" NodeID="85" TitleNum="25" ShowNum="8" /} </ul>
+</div>
+</div>
+<div id="botM_r">
+<div class="botMr_li">
+<div class="mainR_t"><span><a href="#">更多</a></span><b>专题</b></div>
+<p><a href="#" title="" target="_blank"><img src="#" alt=""></a> <b><a href="#" title="">企业选择域名应注意</a></b>企业选择域名应注意什么企业选择域名应注意什么企业 </p>
+<p><a href="#" title="" target="_blank"><img src="#" alt=""></a> <b><a href="#" title="">企业选择域名应注 </a></b>企业选择域名应注意什么企业选择域名应注意什么企业 </p>
+</div>
+
+<div id="botM_dh"> 
+<span>快速导航<a name="Function"></a></span>
+<ul>
+<li><a href="/manage/Panoramic/PanoramicShow.aspx?id=1" target="_blank">三维全景</a></li>
+<li><a href="/try/" target="_blank">在线试戴</a></li>
+<li><a href="/3d/" target="_blank">3D商街</a></li>
+<li><a href="/Questions/Default.aspx?id=1" target="_blank">智能组卷</a></li>
+<li><a href="/guest/" target="_blank">在线留言</a></li>
+<li><a href="/User/UserZone/Cut/" target="_blank">网页剪刀</a></li>
+<li><a href="/user/UserZone/Default.aspx" target="_blank">SNS社区</a></li>
+<li><a href="/Edit" target="_blank">在线助写</a></li>
+<li><a href="/Prompt/correct.aspx" target="_blank">在线纠错</a></li>
+<li><a href="/Prompt/EmailSender.aspx" target="_blank">邮件订阅</a></li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div><!--下部主体-->
+ 
+
+<div id="friend">
+<div id="Fri_tit"><span><a href="{ZL:GetNodeLinkUrl(88)/}">更多</a></span>友情链接 <a href="#">申请链接</a></div>
+<ul>
+{ZL.Label id="友情链接列表" ShowNum="10" NodeID="88" /}
+</ul>
+<div class="clear"></div>
+</div>
+<!--友情链接结束 -->
+
+<div id="help">`
+<dl><dt>产品与服务</dt>
+<dd><a href="#" title=""  target="_blank">产品购买及授权使用说明</a></dd>
+<dd><a href="#" title=""  target="_blank">下载逐浪</a></dd>
+<dd><a href="#" title=""  target="_blank">产品特色</a></dd>
+<dd><a href="http://zoomla.cn/case/" title=""  target="_blank">案例中心 </a></dd> 
+</dl>
+<dl><dt>常见问题</dt>
+<dd><a href="#" title=""  target="_blank">产品购买常见问题</a></dd>
+<dd><a href="#" title=""  target="_blank">安装使用</a></dd>
+<dd><a href="#" title=""  target="_blank">产品购买及常见问</a></dd>
+<dd><a href="#" title=""  target="_blank">产品购买及常见问题</a></dd> 
+</dl>
+<dl><dt>技术主机联盟</dt>
+<dd><a href="#" title=""  target="_blank">什么是技术联盟？</a></dd>
+<dd><a href="#" title=""  target="_blank">如何加入主机商联盟？</a></dd>
+<dd><a href="#" title=""  target="_blank">成员如何进行实名认证</a></dd>
+<dd><a href="#" title=""  target="_blank">提交案例及审核说明</a></dd> 
+</dl>
+<dl><dt>模板及插件下载</dt>
+<dd><a href="#" title=""  target="_blank">产品历史版本及使用说明下载</a></dd>
+<dd><a href="#" title=""  target="_blank">海量千套模板下载</a></dd>
+<dd><a href="#" title=""  target="_blank">系统插件下载</a></dd>
+<dd><a href="#" title=""  target="_blank">常用软件下载</a></dd> 
+</dl> 
+</div>
+
+<div style="clear:both;"></div>
+<div id="bottom">
+<a href="{ZL:GetInfoUrl(20)/}">关于我们</a> |
+<a href="{ZL:GetNodeLinkUrl(87)/}">招贤纳士</a> |
+<a href="{ZL:GetInfoUrl(21)/}">联系我们</a> | 
+<a href="{ZL:GetNodeLinkUrl(77)/}">帮助中心</a> |
+<a href="{ZL:GetInfoUrl(22)/}">法律声明</a> |
+<a href="{ZL:GetNodeLinkUrl(106)/}">网站地图</a> |
+<a href="{ZL:GetInfoUrl(23)/}">鸣谢名单</a> |
+<a href="/guest/">用户反馈</a> |
+<a href="/{$ManageDir/}" target="_blank">管理登陆</a>
+
+</div>
+
+<div id="copyright">
+{$Copyright/}
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="Micro">
+  <div class="Micro_r"> <img src="{$CssDir/}images/Micro.gif"   class="tigger" id="Micro1" alt="微信" onMouseMove="Micro()" /> </div>
+  <div id="Micro_l" style="display:none;"   onMouseMove="Micro()" onMouseout="Micro_none()" >
+    <div class="Mic_l"> <img src="{$CssDir/}images/Big_Micro.jpg" /></div>
+    <div class="Mic_r">
+      <ul>
+        <li>打开微信:</li>
+        <li>1.或选择魔术棒,扫一扫</li>
+        <li>2.或选择"朋友们",扫一扫</li>
+        <li>3.或查找微信号:逐浪CMS</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<DIV id=floatTools class=float0831>
+  <DIV class=floatL><A id=aFloatTools_Show class=btnOpen title=查看在线客服 onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.zoomla.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');" 
+href="javascript:void(0);">展开</A> <A  style="DISPLAY: none" id=aFloatTools_Hide class=btnCtn title=关闭在线客服 onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.zoomla.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');" 
+href="javascript:void(0);">收缩</A> </DIV>
+  <DIV id=divFloatToolsView class=floatR style="display:none;">
+    <DIV class=tp></DIV>
+    <DIV class=cn>
+      <UL>
+        <LI class=top>
+          <H3 class=titZx>QQ咨询</H3>
+        </LI>
+        <!--<LI><SPAN class=icoZx>在线咨询</SPAN> </LI>-->
+        <LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=184886758&amp;site=qq&amp;menu=yes">京沪苏粤售前</A> </LI>
+        <LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=69250566&amp;site=qq&amp;menu=yes">软件授权售前</A> </LI>
+        <LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=228388629&amp;site=qq&amp;menu=yes">高端订制售前</A> </LI>
+        <LI class=bot><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=1579153275&amp;site=qq&amp;menu=yes">教育系统集成</A> </LI>
+      </UL>
+      <UL class=webZx>
+        <LI class=webZx-in><A href="/guest/" target="_blank" style="FLOAT: left" title="查看更多联系方式"><IMG src="{$CssDir/}images/right_float_web.png" alt="网页咨询"></A> </LI>
+      </UL>
+      <UL>
+        <LI>
+          <H3 class=titDh>电话咨询</H3>
+        </LI>
+        <LI><SPAN class=icoTl>1317777714</SPAN> </LI>
+        <LI class=bot>
+          <H3 class=titDc><A href="http://zoomla.cn/pub/" target="_blank">免费下载逐浪CMS</A></H3>
+        </LI>
+      </UL>
+    </DIV>
+  </DIV>
+</DIV>
+
+<a name="a2"></a>
+<script>    var companyname = "逐浪软件";</script>
+<script src="../OnlineService/js/kf.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function toggle(targetid,objN){
+   
+      var target=document.getElementById(targetid);
+   var iskin=document.getElementById(objN)
+
+            if (target.style.display=="block"){
+                target.style.display="none";
+    iskin.innerText="换肤";
+    
+
+            } else {
+                target.style.display="block";
+    iskin.innerText='换肤';
+            }
+   
+}
+--></script><script>
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setDate(exdate.getDate()+expiredays)
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+alert("保存成功")
+}
+
+function getCookie(c_name)
+ {
+if (document.cookie.length>0)
+  { 
+   c_start=document.cookie.indexOf(c_name + "=")
+  
+  if (c_start!=-1)
+    { 
+     c_start=c_start + c_name.length+1; 
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+   document.getElementById("skinCss").href="{$CssDir/}skin_"+document.cookie.substring(c_start,c_end)+".css";
+
+  }
+   }
+return ""
+}
+function delCookie(){
+document.getElementById("skin_0").click();
+document.getElementById("definite").click();	
+	}
+
+</script>
+
+<span style="display:none"><img src="/images/logo.gif" onload="getCookie('Skinname')"></span>
+<SCRIPT src="{$CssDir/}js/Guide.js" type=text/javascript></SCRIPT> 
+<SCRIPT src="/js/openType.js" type=text/javascript></SCRIPT> 
+<script type="text/javascript" src="{$CssDir/}js/customBlks.js"></script>
+
+<script type="text/javascript">
+
+ function navst(){ 
+	 document.getElementById("sub_navs").style.display="block";
+		 document.getElementById("bodys").style.display="block";
+		 	 document.getElementById("divText").style.display="block";
+			  document.getElementById("divText").style.top="240px";
+			  index:0
+ 	 } 
+
+document.getElementById("guide1").style.left=((window.screen.width-960)/2+940)+"px";
+function uids(){
+ var UGuide={
+	index:0,
+	guideList:{data:[
+		{text:"",dependID:"guide1",seat:"right"},
+		{text:"",dependID:"guide2",seat:"left"},
+		{text:"",dependID:"guide3",seat:"top"},
+		{text:"",dependID:"guide4",seat:"bottom"}
+	]},
+	hotDiv:function(dependObj){
+		var obj=$("#"+dependObj.dependID);
+		var objXY=obj.offset();
+		var _divb = $('#divGuideMask');
+		_divb.css({"top":objXY.top-2,"left":objXY.left-2,"width":obj.width(),"height":obj.height()})
+		return _divb;
+	},
+	sMask:function(dependObj){
+		var _divb=this.hotDiv(dependObj);
+		//alert(_divb.offset().top);
+		var MasDiv=$("#MasDiv");
+		var textDiv=$("#divText");
+		$("#divText p").empty().append(dependObj.text);
+		if (dependObj.seat == "right") {
+           textDiv.css({
+		   		"top":240,
+				"left":(window.screen.width-960)/2+980
+		   })
+        } else if (dependObj.seat == "left") {
+           textDiv.css({
+		   		"top":740,
+				"left":(window.screen.width-960)/2+980
+ 		   })
+	 
+        } else if (dependObj.seat == "top") {
+            textDiv.css({
+		   		"top":1180,
+			"left":(window.screen.width-960)/2+980
+		   })
+        } else if (dependObj.seat == "bottom") {
+             textDiv.css({
+		   		"top":1638,
+				"left":(window.screen.width-960)/2+980
+		   })
+        }
+        
+		MasDiv.css({
+			"top":0,
+			"left":0,
+			"height":_divb.innerHeight(),
+			"width":_divb.innerWidth(),
+			 "display":"block",
+			"border-top-width":_divb.offset().top,
+			"border-left-width":_divb.offset().left,
+			"border-right-width":$().width()-_divb.offset().left-_divb.innerWidth(),
+			"border-bottom-width":$().height()-_divb.offset().top-_divb.innerHeight()
+		});
+		//alert(_divb.offset().top);
+	},
+	show:function(_index){
+		var objDate=this.guideList.data[_index]
+	
+		if(!$('#divGuideMask')[0]){
+			$("<div class='mask-class'></div>").attr("id","MasDiv").insertBefore("#divText");
+			$("<div></div>").attr("id","divGuideMask").css({
+				"position": "absolute"
+				 
+			}).insertBefore("#divText");
+			$("#divText").css({
+				"position": "absolute",
+				"width":"300px"
+			 
+			});
+		}
+		this.hotDiv(objDate);
+		this.sMask(objDate);
+	},
+	next: function() {
+        this.index++;
+        if (this.index >= this.guideList.data.length) {
+            this.index = this.guideList.data.length - 1;
+            return;
+        }
+        this.show(this.index);
+ 
+		var n=this.index+1;
+  			 document.getElementById("guide"+this.index).style.display="none";
+		 document.getElementById("guide"+n).style.display="block";
+		 var hei=300+200*this.index;
+	document.documentElement.scrollTop=hei;
+   document.getElementById("guide"+n).style.left=((window.screen.width-960)/2+940)+"px";
+   
+    },
+	prev: function() {
+        this.index--;
+        if (this.index < 0) {
+            this.index = 0;
+        }
+        this.show(this.index);
+ 			 
+				
+   		 
+
+    },
+	close:function(){
+		$("#MasDiv,#divText").fadeOut();
+		 document.getElementById("sub_navs").style.display="none";
+		 document.getElementById("bodys").style.display="none";
+		document.getElementById("guide1").style.display="block";
+		document.getElementById("guide2").style.display="none";
+		document.getElementById("guide3").style.display="none";
+		document.getElementById("guide4").style.display="none";
+	 
+	}
+};
+
+UGuide.show(0);
+$("#next").click(function(){
+	UGuide.next();
+});
+$("#prev").click(function(){
+	UGuide.prev();
+});
+$("#close").click(function(){
+	UGuide.close();
+});
+}
+</script>
+
+
+</body>
+</html>

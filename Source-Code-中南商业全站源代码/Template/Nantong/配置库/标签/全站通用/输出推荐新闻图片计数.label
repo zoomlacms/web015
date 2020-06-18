@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>680</LabelID>
+    <LabelName>输出推荐新闻图片计数</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_C_Article on ZL_CommonModel.ItemID=ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.Inputer,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_Article.pic</LabelField>
+    <LabelWhere>(ZL_CommonModel.FirstNodeID=@NodeID OR ZL_CommonModel.NodeID=@NodeID)  And ZL_CommonModel.EliteLevel=1 And ZL_CommonModel.Status=99</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;a style="display:block;" id="flash{ZL:jsq}" href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}" /&gt;&lt;/a&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>一直累加</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>1</Modelvalue>
+    <Valueroot />
+    <IsOpen>1</IsOpen>
+    <FalseContent>{Repeate}
+&lt;a style="display:none;" id="flash{ZL:jsq}" href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}" /&gt;&lt;/a&gt;
+{/Repeate}</FalseContent>
+    <DataSourceType>Nantong</DataSourceType>
+    <ConnectString />
+  </Table>
+</NewDataSet>

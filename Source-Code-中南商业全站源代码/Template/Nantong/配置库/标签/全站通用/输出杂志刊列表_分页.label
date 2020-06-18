@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>686</LabelID>
+    <LabelName>输出杂志刊列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_C_soft on ZL_CommonModel.ItemID=ZL_C_soft.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_soft.DownUrl,ZL_C_soft.DownUrlthum,ZL_C_soft.explain,ZL_C_soft.Soft_pic,flash</LabelField>
+    <LabelWhere>(ZL_CommonModel.FirstNodeID=@NodeID OR ZL_CommonModel.NodeID=@NodeID or Nodeid IN(SELECT nODEid FROM ZL_nODE Where ParentID=@NodeID)) And ZL_CommonModel.Status=99 And ZL_CommonModel.TableName='ZL_C_soft'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;ul&gt;
+{Repeate}
+&lt;li&gt;&lt;a href="{Field="flash"/}#" id="f{Field="GeneralID"/}"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="Soft_pic"/})/}" alt="{Field="Title"/}" onload="flashss('{Field="GeneralID"/}','{Field="DownUrl"/}','{Field="flash"/}')" /&gt;&lt;br/&gt; 
+{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;
+ 
+&lt;div class="pdfs"&gt;
+&lt;b id="ff{Field="GeneralID"/}" class="a1"&gt;
+{ZL:SplitDown({Field="DownUrl"/},&lt;img src='{$CssDir/}images/xz.gif' id="d{Field="GeneralID"/}"/&gt;)/}
+&lt;/b&gt;
+&lt;a href="{Field="flash"/}" id="l{Field="GeneralID"/}" class="a2" target="_blank" &gt;
+&lt;img src='{$CssDir/}images/yd.gif' /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+{/Repeate}
+&lt;/ul&gt;
+{ZL.Page/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>Nantong</DataSourceType>
+    <ConnectString />
+  </Table>
+</NewDataSet>

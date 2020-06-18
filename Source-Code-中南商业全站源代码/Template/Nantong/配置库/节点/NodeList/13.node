@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>13</NodeID>
+    <NodeName>星级酒店</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>xjjd</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips />
+    <ParentID>2</ParentID>
+    <OrderID>13</OrderID>
+    <Child>0</Child>
+    <Depth>2</Depth>
+    <NodePicUrl>/Template/Nantong/style/images/s_02.jpg</NodePicUrl>
+    <Description>南通金石国际大酒店由中南控股集团有限公司投资兴建，占地10712㎡，坐落于南通新城区核心区域，总建筑面积14万平方米；建筑高度277.39米，酒店按国家白金五星的标准设计建造，由上海设计院美国HBA酒店联合设计有限公司负责室内装潢，风格俊朗挺拔，尽显王者霸气，是集餐饮、客房、康体、娱乐、高级会所、酒店式公寓等功能于一体的豪华大型酒店。除硬件设施过硬外，风格奢华外，酒店特邀在酒店业内享有声誉的青岛海景花园酒店管理公司进行管理，打造“亲情一家人”的服务品牌，创造让客人满意、让客人惊喜、让客人感动的服务品牌三境界，让顾客感受如家人一般的感受。</Description>
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <IndexTemplate>栏目列表/产品中心.html</IndexTemplate>
+    <ListTemplateFile />
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel>8</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>3</ListPageHtmlEx>
+    <ContentFileEx>3</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>1</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <SafeGuard>0</SafeGuard>
+    <ItemOpenTypeTrue>_self</ItemOpenTypeTrue>
+    <OpenTypeTrue>_self</OpenTypeTrue>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>1</ClickTimeout>
+    <Purview>&lt;View&gt;allUser&lt;/View&gt;&lt;ViewGroup&gt;&lt;/ViewGroup&gt;&lt;ViewSunGroup&gt;&lt;/ViewSunGroup&gt;&lt;input&gt;&lt;/input&gt;&lt;forum&gt;1,2&lt;/forum&gt;</Purview>
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>3</ListPageEx>
+    <LastinfoPageEx>3</LastinfoPageEx>
+    <HotinfoPageEx>3</HotinfoPageEx>
+    <ProposePageEx>3</ProposePageEx>
+    <Viewinglimit>1=0|2=0</Viewinglimit>
+  </Table>
+</NewDataSet>

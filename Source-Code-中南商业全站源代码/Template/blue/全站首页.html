@@ -1,0 +1,301 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{$SiteName/}_首页</title>
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:HTML5()/}
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<SCRIPT SRC="{$CssDir/}JS/dcs_tag.js" type ="text/javascript"></SCRIPT>
+<script type="text/javascript" src="{$CssDir/}js/server.js"></SCRIPT>
+</head>
+<body class="home_bg">
+<div class="page_pub">
+<div class="page">
+<div class="page_top">
+<p> <a href="{ZL:GetNodeListUrl(1)/}" target="_blank">首页</a> <a href="/user/" target="_blank">会员</a> <a href="http://bbs.zoomla.cn/" target="_blank">论坛</a> <a href="http://help.zoomla.cn" target="_blank">使用帮助</a> </p>
+</div>
+<div id="page_logo"><a href="/" target="_blank"><img src="{$LogoUrl/}" alt="{$SiteName/}" /></a></div>
+<div class="page_main">
+<div class="page_main_left">
+<div class="page_main_l" id="pagemain1">
+<div class="bic_left">
+<div class="page_main_icon" onmouseover="show(this)" onmouseout="hide(this)"><img src="{$CssDir/}images/nic1.jpg" /> <a id="a1" href="{ZL:GetNodeListUrl(1)/}" style="display:none" target="_blank"><img src="{$CssDir/}images/nic1_1.jpg" /></a> </div>
+<div class="page_main_icon" onmouseover="show(this)" onmouseout="hide(this)"><img src="{$CssDir/}images/nic2.jpg" /> <a id="a2" href="{ZL:GetNodeLinkUrl(2)/}" style="display:none" target="_blank" ><img src="{$CssDir/}images/nic2_1.jpg" /></a> </div>
+<div class="page_main_icon" onmouseover="show(this)" onmouseout="hide(this)"><img src="{$CssDir/}images/nic3.jpg" /> <a id="a3" href="http://pano.zoomla.cn/" style="display:none" target="_blank" ><img src="{$CssDir/}images/nic3_1.jpg" /></a> </div>
+<div class="page_main_icon" onmouseover="show(this)" onmouseout="hide(this)"> <img src="{$CssDir/}images/nic4.jpg" /><a id="a4" href="/Edit/" style="display:none" target="_blank" ><img src="{$CssDir/}images/nic4_1.jpg" /></a> </div>
+</div>
+<div class="bic_more">
+<div class="page_main_icon2" onmouseover="show(this)" onmouseout="hide(this)"> <img src="{$CssDir/}images/nic5.jpg" /> <a href="javascript:void(0)" style="display:none"><img src="{$CssDir/}images/nic5_1.jpg" onclick="advshow2()"/></a> </div>
+</div>
+</div>
+
+<!--第二屏-->
+<div class="page_main_l" id="pagemain2" style="display:none">
+<div class="page_main_icon"><a href="/try/" target="_blank" ><img src="{$CssDir/}images/metro1.jpg" alt="在线试戴" /></a></div>
+<div class="page_main_icon"><a href="Prompt/EmailSender.aspx" target="_blank" ><img src="{$CssDir/}images/metro2.jpg" alt="邮件发送" /></a></div>
+<div class="page_main_icon"><a href="/Questions/Default.aspx?id=1" target="_blank" ><img src="{$CssDir/}images/metro3.jpg" alt="智能组卷" /></a></div>
+<div class="page_main_icon"><a href="Guest/Baike/" target="_blank" ><img src="{$CssDir/}images/metro4.jpg" alt="百科" /></a></div>
+<div class="page_main_icon"><a href="Guest/Ask/" target="_blank" ><img src="{$CssDir/}images/metro5.jpg" alt="问答" /></a></div>
+<div class="page_main_icon"><a href="Guest/" target="_blank" ><img src="{$CssDir/}images/metro6.jpg" alt="留言" /></a></div>
+<div class="page_main_icon"><a href="{ZL:GetNodeLinkUrl(85)/}" target="_blank" ><img src="{$CssDir/}images/metro7.jpg" alt="图库" /></a></div>
+<div class="page_main_icon"><a href="{ZL:GetNodeLinkUrl(86)/}" target="_blank" ><img src="{$CssDir/}images/metro8.jpg" alt="视频" /></a></div>
+<div class="page_main_icon"><a href="{ZL:GetNodeLinkUrl(3)/}" target="_blank" ><img src="{$CssDir/}images/metro9.jpg" alt="网店" /></a></div>
+<div class="page_main_icon"><a href="{ZL:GetNodeLinkUrl(144)/}" target="_blank" ><img src="{$CssDir/}images/metro10.jpg" alt="文件工厂" /></a></div>
+</div>
+<div class="ac">
+<div class="acleft"><img src="{$CssDir/}images/al.jpg" onclick="advshow1()"></div>
+<div class="accenter" id="imagediv">
+<div class="as"><img src="{$CssDir/}images/asbg.jpg"/></div>
+<div onclick="advshow3()" style="cursor:pointer;">&nbsp;</div>
+</div>
+<div class="acright"><img src="{$CssDir/}images/ar.jpg" onclick="advshow2()"/></div>
+</div>
+</div>
+
+<!--轮播广告-->
+<div class="e-bx_banner">
+<div style="width:242px; height:242px; overflow:hidden; position:relative;_z-index:-999">
+<div class="e-bx_banner_img" name="sun" onmouseover="over(0)" onmouseout="out(0)"  ><a id="a16"  href="User/info/AdPlan.aspx" target="_blank"><img src="{$CssDir/}images/pic4.jpg" alt="智能广告" /></a></div>
+<div class="e-bx_banner_img" name="sun" onmouseover="over(1)" onmouseout="out(1)" ><a href="User/Magazine/AddMagazine.aspx" target="_blank"><img src="{$CssDir/}images/pic5.jpg" alt="电子杂志" /></a></div>
+<div class="e-bx_banner_img" name="sun" onmouseover="over(2)" onmouseout="out(2)" ><a id="a17" href="Plugins/Doc.aspx" target="_blank"><img src="{$CssDir/}images/pic3.jpg" alt="文件工厂" /></a></div>
+<div class="dot" style="position:absolute; top:232px; left:160px">
+<ul>
+<li id="s0" class="hsdot" onmouseover="over(0)" onmouseout="out(0)" style="display:none"></li>
+<li id="s1" class="zsdot" onmouseover="over(1)" onmouseout="out(1)" style="display:none"></li>
+<li id="s2" class="zsdot" onmouseover="over(2)" onmouseout="out(2)" style="display:none"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--轮播广告--> 
+
+<!-- footer-->
+<div class="footer_pub">
+<div id="home_footer">
+<ul>
+<li><a href="{ZL:GetNodeLinkUrl(106)/}" target="_blank">网站地图</a></li>
+<li><a href="{ZL:GetInfoUrl(22)/}" target="_blank">法律声明</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(77)/}" target="_blank">帮助中心</a></li>
+<li><a href="{ZL:GetInfoUrl(21)/}" target="_blank">联系我们</a></li>
+<li><a href="{ZL:GetInfoUrl(20)/}" target="_blank">关于我们</a></li>  
+<li><a href="/Scha.aspx" target="_blank">防伪查询</a></li>
+<li><a href="/guest/" target="_blank">用户反馈</a></li>
+<li><a href="/{$ManageDir/}/Mobile/Camera.aspx" target="_blank">在线拍照</a></li> 
+<li><a href="{$ManageDir/}/Default.aspx" target="_blank">管理登陆</a></li>
+</ul>
+<div class="clear"></div>
+<div id="copyright"> {$Copyright/} </div>
+</div>
+</div>
+<div class="Micro">
+<div class="Micro_r"> <img src="{$CssDir/}images/Micro.gif"   class="tigger" id="Micro1" alt="微信" onMouseMove="Micro()" /> </div>
+<div id="Micro_l" style="display:none;"   onMouseMove="Micro()" onMouseout="Micro_none()" >
+<div class="Mic_l"> <img src="{$CssDir/}images/Big_Micro.jpg" /></div>
+<div class="Mic_r">
+<ul>
+<li>打开微信:</li>
+<li>1.或选择魔术棒,扫一扫</li>
+<li>2.或选择"朋友们",扫一扫</li>
+<li>3.或查找微信号:逐浪CMS</li>
+</ul>
+</div>
+</div>
+</div>
+<DIV id=floatTools class=float0831>
+<DIV class=floatL><A id=aFloatTools_Show class=btnOpen title=查看在线客服 onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.zoomla.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');" 
+href="javascript:void(0);">展开</A> <A  style="DISPLAY: none" id=aFloatTools_Hide class=btnCtn title=关闭在线客服 onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.zoomla.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');" 
+href="javascript:void(0);">收缩</A> </DIV>
+<DIV id=divFloatToolsView class=floatR style="display:none;">
+<DIV class=tp></DIV>
+<DIV class=cn>
+<UL>
+<LI class=top>
+<H3 class=titZx>QQ咨询</H3>
+</LI>
+<!--<LI><SPAN class=icoZx>在线咨询</SPAN> </LI>-->
+<LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=184886758&amp;site=qq&amp;menu=yes">京沪苏粤售前</A> </LI>
+<LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=69250566&amp;site=qq&amp;menu=yes">软件授权售前</A> </LI>
+<LI><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=228388629&amp;site=qq&amp;menu=yes">高端订制售前</A> </LI>
+<LI class=bot><A class=icoTc href="http://wpa.qq.com/msgrd?v=3&amp;uin=1579153275&amp;site=qq&amp;menu=yes">教育系统集成</A> </LI>
+</UL>
+<UL class=webZx>
+<LI class=webZx-in><A href="/guest/" target="_blank" style="FLOAT: left" title="查看更多联系方式"><IMG src="{$CssDir/}images/right_float_web.png" alt="网页咨询"></A> </LI>
+</UL>
+<UL>
+<LI>
+<H3 class=titDh>电话咨询</H3>
+</LI>
+<LI><SPAN class=icoTl>1317777714</SPAN> </LI>
+<LI class=bot>
+<H3 class=titDc><A href="http://zoomla.cn/pub/" target="_blank">免费下载逐浪CMS</A></H3>
+</LI>
+</UL>
+</DIV>
+</DIV>
+</DIV>
+</body>
+</html>
+<script language="javascript"  >
+var a = location.search.replace(/\?WT.ac_id=*/, '');
+var b = "00";
+if (a == "") {
+a = "y";
+}
+if (a.indexOf("sina") != -1) {
+b = "10";
+} else if (a.indexOf("hexun") != -1) {
+b = "20";
+} else if (a.indexOf("sohu") != -1) {
+b = "30";
+} else if (a.indexOf("baidu") != -1) {
+b = "50";
+} else if (a.indexOf("eastmoney") != -1) {
+b = "60";
+} else if (a.indexOf("people") != -1) {
+b = "70";
+}
+
+$("#a1").attr("href", "{ZL:GetNodeListUrl(1)/}" );
+$("#a2").attr("href", "{ZL:GetNodeLinkUrl(2)/}" );
+$("#a3").attr("href", "http://pano.zoomla.cn/"  );
+$("#a4").attr("href", "/Edit/"  );
+$("#a5").attr("href", "/try/"  );
+$("#a6").attr("href", "Prompt/EmailSender.aspx"  );
+$("#a7").attr("href", "/Questions/Default.aspx?id=1" );
+$("#a8").attr("href", "Guest/Baike/" );
+$("#a9").attr("href", "Guest/Ask/" );
+$("#a10").attr("href", "Guest/"  );
+$("#a11").attr("href", "{ZL:GetNodeLinkUrl(85)/}" );
+$("#a12").attr("href", "{ZL:GetNodeLinkUrl(86)/}" );
+$("#a13").attr("href", "{ZL:GetNodeLinkUrl(3)/}" );
+$("#a14").attr("href", "Plugins/Doc.aspx"  );
+
+
+//通栏广告脚本---------------------------
+var now = 0;
+var max = $(".e-bx_banner_img").length - 1;
+for (var i = 0; i <= max; i++) {
+$("#s" + i).show();
+}
+function change() {
+
+$($(".e-bx_banner_img")[now]).css({
+"display": "block"
+});
+//$($(".e-bx_banner_img")[now]).fadeIn("slow");
+var spid = document.getElementById("s" + now);
+spid.className = "zsdot";
+
+for (var i = 0; i <= max; i++) {
+if (i != now) {
+$($(".e-bx_banner_img")[i]).css({
+"display": "none"
+});
+var spid = document.getElementById("s" + i);
+spid.className = "hsdot";
+
+}
+}
+if (now == max) {
+now = 0;
+} else {
+
+now += 1;
+
+}
+
+timerID = setTimeout("change()", 3000);
+}
+
+//鼠标放上去
+function over(num) {
+now = num;
+$($(".e-bx_banner_img")[now]).css({
+"display": "block"
+});
+//$($(".e-bx_banner_img")[now]).fadeIn("slow");
+var spid = document.getElementById("s" + now);
+spid.className = "zsdot";
+
+for (var i = 0; i <= max; i++) {
+if (i != now) {
+$($(".e-bx_banner_img")[i]).css({
+"display": "none"
+});
+var spid = document.getElementById("s" + i);
+spid.className = "hsdot";
+}
+}
+clearTimeout(timerID);
+}
+
+//鼠标离开
+function out(num) {
+now = num;
+change();
+}
+
+function show(ele) {
+$(ele.children[0]).hide();
+$(ele.children[1]).show();
+}
+
+function hide(ele) {
+$(ele.children[0]).show();
+$(ele.children[1]).hide();
+}
+function advshow1() {
+document.getElementById("pagemain1").style.display = 'block';
+document.getElementById("pagemain2").style.display = 'none';
+$("#imagediv").empty();
+$("#imagediv").append('<div class="as"><img src="{$CssDir/}images/asbg.jpg"/></div><div onclick="advshow3()"  style="cursor:pointer;">&nbsp;</div>');
+}
+function advshow2() {
+document.getElementById("pagemain1").style.display = 'none';
+document.getElementById("pagemain2").style.display = 'block';
+$("#imagediv").empty();
+$("#imagediv").append('<div class="as1"><img src="{$CssDir/}images/asbg.jpg"/></div><div onclick="advshow3()"  style="cursor:pointer;">&nbsp;</div>');
+}
+function advshow3() {
+if (document.getElementById("pagemain1").style.display == 'none') {
+document.getElementById("pagemain1").style.display = 'block';
+document.getElementById("pagemain2").style.display = 'none';
+$("#imagediv").empty();
+$("#imagediv").append('<div class="as"><img src="{$CssDir/}images/asbg.jpg"/></div><div onclick="advshow3()"  style="cursor:pointer;">&nbsp;</div>');
+} else {
+document.getElementById("pagemain1").style.display = 'none';
+document.getElementById("pagemain2").style.display = 'block';
+$("#imagediv").empty();
+$("#imagediv").append('<div class="as1"><img src="{$CssDir/}images/asbg.jpg"/></div><div onclick="advshow3()"  style="cursor:pointer;">&nbsp;</div>');
+}
+}
+
+$(function () {
+$("#pagemain2").find(".text1").hide();
+//鼠标在图片上的变幻
+$("#pagemain2").find(".tou").mouseover(function () {
+//$(this).next(".text1").show("2000");	
+//$(this).next(".text1").fadeIn("2000");		
+$(this).next(".text1").slideDown("2000");
+$("#pagemain2").find(".page_main_icon").css("z-index", "1");
+$(this).parent().css("z-index", 99);
+});
+//移除鼠标
+$("#pagemain2").find(".tou").mouseout(function () {
+//$(this).next(".text1").hide();
+//$(this).next(".text1").fadeOut();		
+$(this).next(".text1").slideUp(100);
+
+});
+
+});
+
+</script>

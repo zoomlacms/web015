@@ -1,0 +1,188 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>欢迎访问中南商业官网_首页</title>
+<link href="/Template/Nantong/style/global.css" rel="stylesheet" type="text/css">
+<meta name="Keywords" content="中南,中南商城,中南购物中心,中南商业街,中南酒店,中南百货">
+<meta name="Description" content="中南商业致力于商业地产、商业地产、百货中心等产业">
+<!--[if IE]>
+	<script src="/js/html5.js"></script>
+<![endif]-->
+<style>
+#search { width: 290px; }
+html { height: 100%; }
+html { height: 100%; }
+#search{ margin-right:66px;}
+#top_r{ width:810px;}
+body {  padding:10px 0 10px; background: url(/Template/Nantong/style/images/body1.jpg) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -o-background-size: 100% 100%; }
+</style>
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+ 
+ </head>
+ <body class="login">
+<header>
+<div id="top_li">
+<div id="logo"><a href="/"><img src="/Template/Nantong/style/images/logo.png" alt="中南商业官网"></a></div>
+<!--logo end -->
+<div id="top_r">
+<div id="search">
+<iframe src="/search/indexsearch.aspx" width="160" height="22" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+关注官方微博：<a href="http://t.qq.com/wwwwzf"><img src="/Template/Nantong/style/images/txwb.gif" alt=""></a> <a href="http://weibo.com/zoomlacms"><img src="/Template/Nantong/style/images/xlwb.gif" alt=""></a> </div>
+<div class="navbox">
+<div class="pnav">
+<ul id="nav_li">
+<li class=top class="types7">
+<a href="/"><span class=down>首页</span></a>
+<div class="clear"></div>
+</li>
+<li class=top class="types7">
+ <a href="/Class_1/Default.aspx"><span class=down>走进ZNC</span></a>
+<div class="clear"></div>
+<ul class=sub id="name_li">
+<div class="jt_bg"><img src="/Template/Nantong/style/images/jt.gif" alt="" /></div>
+<strong class="name1"><a href="/Class_1/Default.aspx">以宗旨为引领</a></strong>
+<div class="jtm_r">
+ 
+<li class="Node9"><a href="/Class_9/Default.aspx" target="_self">公司简介</a></li>
+
+<li class="Node10"><a href="/Class_10/Default.aspx" target="_self">商业布局</a></li>
+
+<li class="Node11"><a href="/Class_11/Default.aspx" target="_self">成长历程</a></li>
+
+<li class="Node31"><a href="/Class_31/Default.aspx" target="_self">企业荣誉</a></li>
+
+ </div>
+</ul>
+</li>
+<li class=top1 class="types8">
+ <a href="/Class_2/Default.aspx"><span class=down>产品中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l0">
+<div class="jt_bg"><img src="/Template/Nantong/style/images/jt.gif" alt="" /></div>
+<strong class="name2"><a href="/Class_2/Default.aspx">以质量为保障</a></strong>
+<div class="jtm_r">
+ 
+<li class="Node12"><a href="/Class_12/Default.aspx" target="_self">购物中心</a></li>
+
+<li class="Node13"><a href="/Class_13/Default.aspx" target="_self">星级酒店</a></li>
+
+<li class="Node14"><a href="/Class_14/Default.aspx" target="_self">精品百货</a></li>
+
+<li class="Node15"><a href="/Class_15/Default.aspx" target="_self">商业广场</a></li>
+
+<li class="Node16"><a href="/Class_16/Default.aspx" target="_self">其他</a></li>
+
+ </div>
+</ul>
+</li>
+<li class=top1 class="types9">
+<a href="/Class_3/Default.aspx"><span class=down>新闻中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l1">
+<div class="jt_bg"><img src="/Template/Nantong/style/images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="/Class_3/Default.aspx">沟通与分享</a></strong> 
+<li class="Node17"><a href="/Class_17/Default.aspx" target="_self">集团要闻</a></li>
+
+<li class="Node18"><a href="/Class_18/Default.aspx" target="_self">核心报道</a></li>
+
+<li class="Node19"><a href="/Class_19/Default.aspx" target="_self">新闻快讯</a></li>
+
+<li class="Node20"><a href="/Class_20/Default.aspx" target="_self">新闻公告</a></li>
+
+<li class="Node21"><a href="/Class_21/Default.aspx" target="_self">媒体报道</a></li>
+
+</ul>
+</li>
+<li class=top1 class="types10">
+ <a href="/Class_22/Default.aspx"><span class=down>品牌中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l2">
+<div class="jt_bg"><img src="/Template/Nantong/style/images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="/Class_3/Default.aspx">亲近每一天</a></strong> 
+<li class="Node22"><a href="/Class_22/Default.aspx" target="_self">品牌之路</a></li>
+
+<li class="Node23"><a href="/Class_23/Default.aspx" target="_self">中南人文</a></li>
+
+<li class="Node24"><a href="/Class_24/Default.aspx" target="_self">社会公益</a></li>
+
+<li class="Node25"><a href="/Class_25/Default.aspx" target="_self">企业期刊</a></li>
+
+<li class="Node26"><a href="/Class_26/Default.aspx" target="_self">企业视频</a></li>
+
+</ul>
+</li>
+<li class=top1 class="types11">
+ <a href="/Class_5/Default.aspx"><span class=down>加入我们</span></a>
+<div class="clear"></div>
+<ul class=sub id="name_l3">
+<div class="jt_bg"><img src="/Template/Nantong/style/images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="/Class_3/Default.aspx">和您在一起</a></strong>
+ 
+<li class="Node6"><a href="/Class_6/Default.aspx" target="_self">人文培训</a></li>
+
+<li class="Node7"><a href="/Class_7/Default.aspx" target="_self">人才招聘</a></li>
+
+</ul>
+</li>
+</ul>
+</div>
+<!--nav end --> 
+</div>
+<!--navbox end --> 
+</div>
+<!--top_r end --> 
+</div>
+ <!--top end --> 
+</header>
+
+ 
+<div id="login_bottom_box" style="overflow:hidden">
+<div id="login_bottom_nav">
+<ul>
+<li class="bn1"><a href="/Class_1/Default.aspx" target="_blank" onMouseMove="bodysbg('1')">走进中南</a></li>
+<li class="bn2"><a href="/Class_12/Default.aspx"  onMouseMove="bodysbg('2')">购物中心<br/>
+<em>SHOPPING MALL</em></a></li>
+<li class="bn3"><a href="/Class_13/Default.aspx"  onMouseMove="bodysbg('3')">酒店<br/>
+<em>HOTEL</em></a></li>
+<li class="bn4"><a href="/Class_15/Default.aspx"  onMouseMove="bodysbg('4')">商业街<br/>
+<em>COMMERCIAL STREET</em></a></li>
+<li class="bn5"><a href="/Class_14/Default.aspx"  onMouseMove="bodysbg('5')">百货<br/>
+<em>DEPARTMENT STORE</em></a></li>
+<li class="bn6"><a href="/Class_16/Default.aspx"  onMouseMove="bodysbg('6')">其他<br/>
+<em>OTHER</em></a></li>
+<li class="bn7"><a href="/Item/114.aspx"  onMouseMove="bodysbg('7')">慈善公益</a></li>
+</ul>
+</div>
+</div>
+<!-- login_bottom_box end--> 
+<script type="text/javascript">
+<!--
+$('html').addClass('js-enabled');
+$(document).ready(function() {
+$('#menu li.primary_nav_item').find('div.subnav_container').hide();
+$('#menu li.primary_nav_item')
+.mouseenter(function(e) {
+var $elm = $(this);
+$elm.data('mouseover', true); 
+setTimeout(function(){if($elm.data('mouseover'))$elm.children('div.subnav_container:hidden').slideDown();},100); })
+.mouseleave(function(e) {
+var $elm = $(this);
+$elm.data('mouseover', false);
+$elm.children('div.subnav_container:visible').slideUp();
+})
+});
+//-->
+
+
+function bodysbg(id){
+	
+	document.body.style.backgroundImage="url(/Template/Nantong/style/images/body"+id+".jpg)";
+		document.body.style.backgroundRepeat="no-repeat";
+	}
+
+</script>
+</body>
+</html>

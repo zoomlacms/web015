@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>12</NodeID>
+    <NodeName>购物中心</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>gwzx</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips />
+    <ParentID>2</ParentID>
+    <OrderID>12</OrderID>
+    <Child>0</Child>
+    <Depth>2</Depth>
+    <NodePicUrl>/Template/Nantong/style/images/s_01.jpg</NodePicUrl>
+    <Description>中南城是江苏南通中南集团(SZ000961)与亿万豪剑桥首度合作开发管理的购物中心项目，购物中心位于南通市中央商务区（CBD）核心位置，工农路与桃园路交汇处，交通极为便利。中南集团旗下南通新世界中心开发有限公司为业主方，亿万豪剑桥为项目的管理方，双方强强联手合力打造南通首家具有国际水准的一站式购物中心。亿万豪剑桥引进了北美购物中心的管理以及经营理念，为中南城提供专业的购物中心设计、定位、招商、市场推广、营运管理等全程的独家管理服务。</Description>
+    <Meta_Keywords />
+    <Meta_Description />
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <IndexTemplate>栏目列表/产品中心.html</IndexTemplate>
+    <ListTemplateFile />
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel>8</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>3</ListPageHtmlEx>
+    <ContentFileEx>3</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>1</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <SafeGuard>0</SafeGuard>
+    <ItemOpenTypeTrue>_self</ItemOpenTypeTrue>
+    <OpenTypeTrue>_self</OpenTypeTrue>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>1</ClickTimeout>
+    <Purview>&lt;View&gt;allUser&lt;/View&gt;&lt;ViewGroup&gt;&lt;/ViewGroup&gt;&lt;ViewSunGroup&gt;&lt;/ViewSunGroup&gt;&lt;input&gt;&lt;/input&gt;&lt;forum&gt;1,2&lt;/forum&gt;</Purview>
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>3</ListPageEx>
+    <LastinfoPageEx>3</LastinfoPageEx>
+    <HotinfoPageEx>3</HotinfoPageEx>
+    <ProposePageEx>3</ProposePageEx>
+    <Viewinglimit>1=0|2=0</Viewinglimit>
+  </Table>
+</NewDataSet>

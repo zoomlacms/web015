@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>欢迎访问{$SiteTitle/}_首页</title>
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css">
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:HTML5()/}
+<style>
+#search { width: 290px; }
+html { height: 100%; }
+html { height: 100%; }
+#search{ margin-right:66px;}
+#top_r{ width:810px;}
+body {  padding:10px 0 10px; background: url({$CssDir/}images/body1.jpg) no-repeat; background-size: 100% 100%; -webkit-background-size: 100% 100%; -o-background-size: 100% 100%; }
+</style>
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+ 
+ </head>
+ <body class="login">
+<header>
+<div id="top_li">
+<div id="logo"><a href="/"><img src="{$LogoUrl/}" alt="{$SiteTitle/}"></a></div>
+<!--logo end -->
+<div id="top_r">
+<div id="search">
+<iframe src="/search/indexsearch.aspx" width="160" height="22" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+关注官方微博：<a href="http://t.qq.com/wwwwzf"><img src="{$CssDir/}images/txwb.gif" alt=""></a> <a href="http://weibo.com/zoomlacms"><img src="{$CssDir/}images/xlwb.gif" alt=""></a> </div>
+<div class="navbox">
+<div class="pnav">
+<ul id="nav_li">
+<li class=top class="types7">
+<a href="/"><span class=down>首页</span></a>
+<div class="clear"></div>
+</li>
+<li class=top class="types7">
+ <a href="{ZL:GetNodeLinkUrl(1)/}"><span class=down>走进ZNC</span></a>
+<div class="clear"></div>
+<ul class=sub id="name_li">
+<div class="jt_bg"><img src="{$CssDir/}images/jt.gif" alt="" /></div>
+<strong class="name1"><a href="{ZL:GetNodeLinkUrl(1)/}">以宗旨为引领</a></strong>
+<div class="jtm_r">
+ {ZL.Label id="节点列表" ParentID="1" ShowNum="10" /}
+ </div>
+</ul>
+</li>
+<li class=top1 class="types8">
+ <a href="{ZL:GetNodeLinkUrl(2)/}"><span class=down>产品中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l0">
+<div class="jt_bg"><img src="{$CssDir/}images/jt.gif" alt="" /></div>
+<strong class="name2"><a href="{ZL:GetNodeLinkUrl(2)/}">以质量为保障</a></strong>
+<div class="jtm_r">
+ {ZL.Label id="节点列表" ParentID="2" ShowNum="10" /}
+ </div>
+</ul>
+</li>
+<li class=top1 class="types9">
+<a href="{ZL:GetNodeLinkUrl(3)/}"><span class=down>新闻中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l1">
+<div class="jt_bg"><img src="{$CssDir/}images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="{ZL:GetNodeLinkUrl(3)/}">沟通与分享</a></strong> {ZL.Label id="节点列表" ParentID="3" ShowNum="10" /}
+</ul>
+</li>
+<li class=top1 class="types10">
+ <a href="{ZL:GetNodeLinkUrl(22)/}"><span class=down>品牌中心</span></a>
+ <div class="clear"></div>
+<ul class=sub id="name_l2">
+<div class="jt_bg"><img src="{$CssDir/}images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="{ZL:GetNodeLinkUrl(3)/}">亲近每一天</a></strong> {ZL.Label id="节点列表" ParentID="4" ShowNum="10" /}
+</ul>
+</li>
+<li class=top1 class="types11">
+ <a href="{ZL:GetNodeLinkUrl(5)/}"><span class=down>加入我们</span></a>
+<div class="clear"></div>
+<ul class=sub id="name_l3">
+<div class="jt_bg"><img src="{$CssDir/}images/jt.gif" alt="" /></div>
+<strong class="name3"><a href="{ZL:GetNodeLinkUrl(3)/}">和您在一起</a></strong>
+ {ZL.Label id="节点列表" ParentID="5" ShowNum="10" /}
+</ul>
+</li>
+</ul>
+</div>
+<!--nav end --> 
+</div>
+<!--navbox end --> 
+</div>
+<!--top_r end --> 
+</div>
+ <!--top end --> 
+</header>
+
+ 
+<div id="login_bottom_box" style="overflow:hidden">
+<div id="login_bottom_nav">
+<ul>
+<li class="bn1"><a href="{ZL:GetNodeLinkUrl(1)/}" target="_blank" onMouseMove="bodysbg('1')">走进中南</a></li>
+<li class="bn2"><a href="{ZL:GetNodeLinkUrl(12)/}"  onMouseMove="bodysbg('2')">购物中心<br/>
+<em>SHOPPING MALL</em></a></li>
+<li class="bn3"><a href="{ZL:GetNodeLinkUrl(13)/}"  onMouseMove="bodysbg('3')">酒店<br/>
+<em>HOTEL</em></a></li>
+<li class="bn4"><a href="{ZL:GetNodeLinkUrl(15)/}"  onMouseMove="bodysbg('4')">商业街<br/>
+<em>COMMERCIAL STREET</em></a></li>
+<li class="bn5"><a href="{ZL:GetNodeLinkUrl(14)/}"  onMouseMove="bodysbg('5')">百货<br/>
+<em>DEPARTMENT STORE</em></a></li>
+<li class="bn6"><a href="{ZL:GetNodeLinkUrl(16)/}"  onMouseMove="bodysbg('6')">其他<br/>
+<em>OTHER</em></a></li>
+<li class="bn7"><a href="{ZL:GetInfoUrl(114)/}"  onMouseMove="bodysbg('7')">慈善公益</a></li>
+</ul>
+</div>
+</div>
+<!-- login_bottom_box end--> 
+<script type="text/javascript">
+<!--
+$('html').addClass('js-enabled');
+$(document).ready(function() {
+$('#menu li.primary_nav_item').find('div.subnav_container').hide();
+$('#menu li.primary_nav_item')
+.mouseenter(function(e) {
+var $elm = $(this);
+$elm.data('mouseover', true); 
+setTimeout(function(){if($elm.data('mouseover'))$elm.children('div.subnav_container:hidden').slideDown();},100); })
+.mouseleave(function(e) {
+var $elm = $(this);
+$elm.data('mouseover', false);
+$elm.children('div.subnav_container:visible').slideUp();
+})
+});
+//-->
+
+
+function bodysbg(id){
+	
+	document.body.style.backgroundImage="url({$CssDir/}images/body"+id+".jpg)";
+		document.body.style.backgroundRepeat="no-repeat";
+	}
+
+</script>
+</body>
+</html>

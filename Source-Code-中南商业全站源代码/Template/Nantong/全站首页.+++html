@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢迎访问_中南商城首页</title>
+<script language="JavaScript" src="style/js/html5.js" ></script>
+<link href="style/global3.css" rel="stylesheet" type="text/css"s>
+</head>
+<body>
+<div id="home_all">
+<header>
+
+<div id="top">
+<div id="logo">
+<a href="/"><img src="style/images/logo.png" alt=""></a>
+</div>
+<div id="top_r">
+<div id="search">
+<input type="text" value="" class="s1"><input type="image" src="style/images/ss.jpg" class="s2">
+</div>
+<nav>
+<ul>
+<li><a href="/">首页</a></li>
+<li><a href="#">走进ZNC</a></li>
+<li><a href="#">产品中心</a></li>
+<li><a href="#">新闻中心</a></li>
+<li><a href="#">品牌中心</a></li>
+<li><a href="#">加入我们</a></li>
+<li><a href="#"><img src="style/images/dangj.gif" alt=""></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div id="bottom_navbox">
+<div id="bottom_nav">
+<ul>
+<li class="bn1"><a href="#">走进中南</a></li>
+<li class="bn2"><a href="#">购物中心<br/><em>SHOPPING MAILL</em></a></li>
+<li class="bn3"><a href="#">酒店<br/><em>HOTEL</em></a></li>
+<li class="bn4"><a href="#">商业街<br/><em>COMMERCIAL STREET</em></a></li>
+<li class="bn5"><a href="#">百货<br/><em>GENERAL MERCHANDISE</em></a></li>
+<li class="bn6"><a href="#">其他<br/><em>OTHER</em></a></li>
+<li class="bn7"><a href="#">慈善公益</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</body>
+</html>

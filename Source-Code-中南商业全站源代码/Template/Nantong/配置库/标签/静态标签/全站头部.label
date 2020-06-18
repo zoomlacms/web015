@@ -1,0 +1,148 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>669</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;header&gt;
+&lt;div id="top_box"&gt;
+&lt;div id="top"&gt;
+&lt;div id="logo"&gt;
+&lt;a href="/"&gt;&lt;img src="{$LogoUrl/}" alt="{$SiteTitle/}"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id="top_r"&gt;
+&lt;div id="search"&gt;
+&lt;iframe src="/search/indexsearch.aspx" width="140" height="22" frameborder="0" allowtransparency="true" scrolling="no" style="float:left; margin-top:5px;"&gt;&lt;/iframe&gt;
+&lt;a href="http://t.qq.com/wwwwzf"&gt;&lt;img src="{$CssDir/}images/txwb.gif" alt=""&gt;&lt;/a&gt; &lt;a href="http://weibo.com/zoomlacms"&gt;&lt;img src="{$CssDir/}images/xlwb.gif" alt=""&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;nav&gt;&lt;ul id="nav_li"&gt;
+&lt;li class=top class="types7"&gt;
+&lt;a href="/"&gt;&lt;span class=down&gt;首页&lt;/span&gt;&lt;/a&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=top class="types7"&gt;
+ &lt;a href="/Class_1/Default.aspx"&gt;&lt;span class=down&gt;走进ZNC&lt;/span&gt;&lt;/a&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;ul class=sub id="name_li"&gt;
+&lt;div class="bgs"&gt;
+&lt;div class="jt_bg"&gt;&lt;img src="{$CssDir/}images/jt.gif" alt="" /&gt;&lt;/div&gt;
+&lt;strong class="name1"&gt;&lt;a href="/Class_1/Default.aspx"&gt;以宗旨为引领&lt;/a&gt;&lt;/strong&gt;
+&lt;div class="jtm_r"&gt;
+ 
+&lt;li class="Node9"&gt;&lt;a href="/Class_9/Default.aspx" target="_self"&gt;公司简介&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node10"&gt;&lt;a href="/Class_10/Default.aspx" target="_self"&gt;商业布局&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node11"&gt;&lt;a href="/Class_11/Default.aspx" target="_self"&gt;成长历程&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node31"&gt;&lt;a href="/Class_31/Default.aspx" target="_self"&gt;企业荣誉&lt;/a&gt;&lt;/li&gt;
+  &lt;/div&gt;
+  &lt;div class="clear"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=top1 class="types8"&gt;
+ &lt;a href="/Class_2/Default.aspx"&gt;&lt;span class=down&gt;产品中心&lt;/span&gt;&lt;/a&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+&lt;ul class=sub id="name_l0"&gt;
+&lt;div class="bgs"&gt;
+&lt;div class="jt_bg"&gt;&lt;img src="{$CssDir/}images/jt.gif" alt="" /&gt;&lt;/div&gt;
+&lt;strong class="name2"&gt;&lt;a href="/Class_2/Default.aspx"&gt;以质量为保障&lt;/a&gt;&lt;/strong&gt;
+&lt;div class="jtm_r"&gt;
+ 
+&lt;li class="Node12"&gt;&lt;a href="/Class_12/Default.aspx" target="_self"&gt;购物中心&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node13"&gt;&lt;a href="/Class_13/Default.aspx" target="_self"&gt;星级酒店&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node14"&gt;&lt;a href="/Class_14/Default.aspx" target="_self"&gt;精品百货&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node15"&gt;&lt;a href="/Class_15/Default.aspx" target="_self"&gt;商业广场&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node16"&gt;&lt;a href="/Class_16/Default.aspx" target="_self"&gt;其他&lt;/a&gt;&lt;/li&gt;
+
+ &lt;/div&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=top1 class="types9"&gt;
+&lt;a href="/Class_3/Default.aspx"&gt;&lt;span class=down&gt;新闻中心&lt;/span&gt;&lt;/a&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+&lt;ul class=sub id="name_l1"&gt;
+&lt;div class="bgs"&gt;
+&lt;div class="jt_bg"&gt;&lt;img src="{$CssDir/}images/jt.gif" alt="" /&gt;&lt;/div&gt;
+&lt;strong class="name3"&gt;&lt;a href="/Class_3/Default.aspx"&gt;沟通与分享&lt;/a&gt;&lt;/strong&gt; 
+&lt;li class="Node17"&gt;&lt;a href="/Class_17/Default.aspx" target="_self"&gt;集团要闻&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node18"&gt;&lt;a href="/Class_18/Default.aspx" target="_self"&gt;核心报道&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node19"&gt;&lt;a href="/Class_19/Default.aspx" target="_self"&gt;新闻快讯&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node20"&gt;&lt;a href="/Class_20/Default.aspx" target="_self"&gt;新闻公告&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node21"&gt;&lt;a href="/Class_21/Default.aspx" target="_self"&gt;媒体报道&lt;/a&gt;&lt;/li&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=top1 class="types10"&gt;
+ &lt;a href="/Class_22/Default.aspx"&gt;&lt;span class=down&gt;品牌中心&lt;/span&gt;&lt;/a&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+&lt;ul class=sub id="name_l2"&gt;
+&lt;div class="bgs"&gt;
+&lt;div class="jt_bg"&gt;&lt;img src="{$CssDir/}images/jt.gif" alt="" /&gt;&lt;/div&gt;
+&lt;strong class="name3"&gt;&lt;a href="/Class_3/Default.aspx"&gt;亲近每一天&lt;/a&gt;&lt;/strong&gt; 
+&lt;li class="Node22"&gt;&lt;a href="/Class_22/Default.aspx" target="_self"&gt;品牌之路&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node23"&gt;&lt;a href="/Class_23/Default.aspx" target="_self"&gt;中南人文&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node24"&gt;&lt;a href="/Class_24/Default.aspx" target="_self"&gt;社会公益&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node25"&gt;&lt;a href="/Class_25/Default.aspx" target="_self"&gt;企业期刊&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="Node26"&gt;&lt;a href="/Class_26/Default.aspx" target="_self"&gt;企业视频&lt;/a&gt;&lt;/li&gt;
+ &lt;div class="clear"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=top1 class="types11"&gt;
+ &lt;a href="/Class_5/Default.aspx"&gt;&lt;span class=down&gt;加入我们&lt;/span&gt;&lt;/a&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;ul class=sub id="name_l3"&gt;
+&lt;div class="bgs"&gt;
+&lt;div class="jt_bg"&gt;&lt;img src="{$CssDir/}images/jt.gif" alt="" /&gt;&lt;/div&gt;
+&lt;strong class="name3"&gt;&lt;a href="/Class_3/Default.aspx"&gt;和您在一起&lt;/a&gt;&lt;/strong&gt;
+&lt;li class="Node6"&gt;&lt;a href="/Class_6/Default.aspx" target="_self"&gt;人文培训&lt;/a&gt;&lt;/li&gt;
+&lt;li class="Node7"&gt;&lt;a href="/Class_7/Default.aspx" target="_self"&gt;人才招聘&lt;/a&gt;&lt;/li&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/nav&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/header&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

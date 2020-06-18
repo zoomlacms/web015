@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>670</LabelID>
+    <LabelName>新闻中心图片轮换效果图</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;ul id="pub_slideplay"&gt;
+&lt;li&gt;&lt;a href='' target="_blank"&gt;&lt;img alt="中南服务" src="{$CssDir/}images/ad1.jpg" width=630 height=280&gt;&lt;br/&gt;&lt;p&gt;中南服务！您最佳的选择&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='' target="_blank"&gt;&lt;img alt="中南服务”" src="{$CssDir/}images/ad2.jpg" width=630 height=280&gt;&lt;p&gt;中南租房信息招商中！&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='' target="_blank"&gt;&lt;img alt="中南服务？啃爹的吧" src="{$CssDir/}images/ad3.jpg" width=630 height=280&gt;&lt;p&gt;中南与国学教育活动&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='' target="_blank"&gt;&lt;img alt="中南服务" src="{$CssDir/}images/ad4.jpg" width=630 height=280&gt;&lt;br/&gt;&lt;p&gt;中南租房信息招商中！&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='' target="_blank"&gt;&lt;img alt="中南服务”" src="{$CssDir/}images/ad5.jpg" width=630 height=280&gt;&lt;p&gt;中南与国学教育活动&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;new dk_slideplayer("#pub_slideplay",{width:"630px",height:"280px",fontsize:"12px",time:"5000",imgh:"280px"});&lt;/script&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

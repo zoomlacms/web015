@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$SiteName/}问答系统</title>
+<link href="{$CssDir/}fques.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<base target="_blank" />	
+{ZL.Label id="获取栏目关键字和描述" nodeid="{$GetRequest(nodeid)$}" /}
+ </head>
+<body id="header" >
+<div id="home_all"> 
+{ZL.Label id="蓝色头部"/}
+{ZL.Label id="问答导航"/} 
+<div id="quespositon">
+<div class="topsech">
+{ZL.Label id="头部搜索表单"/}</div>
+<a href="/columnlist.aspx?nodeid=113">问答系统</a>>>{ZL.Label id="获取问题分类名" parentid="{$GetRequest(bigclass)$}" /}
+<div id="askwrap">
+<div id="asklistleft">
+<div class="asklistleft_box" id="aksbox">
+{ZL.Label id="问题分类1" parentid="{$GetRequest(bigclass)$}" /}
+<div style="clear:both"></div>
+</div><!--box-->
+<div id="showques">
+<div id="showtitle">
+<ul>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=115&bigclass={$GetRequest(bigclass)$}">全部问题</a></li>
+<li class="cbgopen"><a href="/columnlist.aspx?nodeid=116&bigclass={$GetRequest(bigclass)$}">已解决问题</a></li>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=117&bigclass={$GetRequest(bigclass)$}">待解决问题</a></li>
+<li class="cbgclose"><a href="/columnlist.aspx?nodeid=118&bigclass={$GetRequest(bigclass)$}">零回答问题</a></li>
+</ul>
+
+
+</div>
+<div id="showcon">
+<dl>
+<dt ><b style="margin-left:20px;">标题</b></dt>
+<dd><span>阅读</span>
+<span>回答</span>
+<span>状态</span>
+<p>回答时间</p>
+</dd>
+<div style="clear:both"></div>
+</dl>
+{ZL.Label id="大类全部问题列表" num="25" /}
+
+
+</div>
+</div><!--box-->
+</div><!--left-->
+
+<div id="askright">
+
+<div class="askrightbox">
+<h3>公告区</h3>
+<ul>
+<li><a href="#">上坊路是理发师</a></li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+</ul>
+
+</div><!--box-->
+<div class="askrightbox">
+<h3>精选回答</h3>
+<ul>
+<li><a href="#">上坊路是理发师</a></li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+</ul>
+
+</div><!--box-->
+<div class="askrightbox">
+<h3>公告区</h3>
+<ul>
+<li><a href="#">上坊路是理发师</a></li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+<li>上坊路是理发师</li>
+</ul>
+
+</div>
+</div><!--right-->
+
+</div><!--end askwrap-->
+</div>
+
+{ZL.Label id="蓝色底部"/}<div class="clear"></div>
+</div>
+<SCRIPT src="/js/openType.js" type=text/javascript></SCRIPT> 
+</body>
+</html>

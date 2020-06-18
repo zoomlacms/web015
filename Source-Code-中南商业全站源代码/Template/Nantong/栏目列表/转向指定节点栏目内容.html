@@ -1,0 +1,24 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+{ZL:HTML5()/}
+<link href="style/global.css" rel="stylesheet" type="text/css"s>
+</head>
+<style>
+nav li a { color:#5E3080;}
+#search { width:290px; float:right; margin-right:65px; line-height:20px; }
+.s2 { margin-right:5px;}
+#search a { margin-left:2px; }
+#search a img { padding-top:2px;}
+nav li a:hover { background:url(style/images/nava_bg.gif) bottom no-repeat; height:42px; line-height:42px; display:block;}
+</style>
+<body>
+ <script>
+ var a='{ZL.Label id="转向最新节点内容" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" /}';
+ window.open("/item/"+a+".aspx","_parent");
+ </script>
+</body>
+</html>

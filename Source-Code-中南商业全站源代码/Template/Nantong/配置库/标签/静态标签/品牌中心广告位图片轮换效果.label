@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>684</LabelID>
+    <LabelName>品牌中心广告位图片轮换效果</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="bannerbox"&gt;
+ 
+&lt;div id="flash"&gt;
+&lt;a style="display:block;" id="flash1"&gt;&lt;img src="{$CssDir/}images/banner1.jpg" alt="ad1" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash2"&gt;&lt;img src="{$CssDir/}images/banner.jpg" alt="ad2" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash3"&gt;&lt;img src="{$CssDir/}images/banner1.jpg" alt="ad2" /&gt;&lt;/a&gt;
+&lt;a style="display:none;" id="flash4"&gt;&lt;img src="{$CssDir/}images/banner.jpg" alt="ad2" /&gt;&lt;/a&gt;
+        
+&lt;DIV class="flash_bar"&gt;
+&lt;DIV id="f1" class="dq" onclick="changeflash('1')"&gt;&lt;/DIV&gt;
+&lt;DIV id="f2" class="no" onclick="changeflash('2')"&gt;&lt;/DIV&gt;
+&lt;DIV id="f3" class="no" onclick="changeflash('3')"&gt;&lt;/DIV&gt;
+&lt;DIV id="f4" class="no" onclick="changeflash('4')"&gt;&lt;/DIV&gt;
+&lt;/DIV&gt;
+ 
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>
